@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.class_notice {
+  width: 80%;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.class_notice .yellow {
+  color: #fff288;
+}
+.class_notice .green {
+  color: #b1dd8e;
+}
+.class_notice .blue {
+  color: #6ba1ff;
+}
+.class_notice .red {
+  color: red;
+}
+.class_notice .gray {
+  color: gray;
+}
+.class_notice h4 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: normal;
+}
+.class_notice .steps {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #a18ed7;
+  font-size: 26px;
+  color: white;
+}
+.class_notice ul {
+  width: 60%;
+  margin: auto;
+  text-align: left;
+}
+.class_notice ul li {
+  font-size: 20px;
+  margin-left: 10px;
+  line-height: 1.75em;
+}
+
+.price_table {
+  width: 85%;
+  margin: 80px auto;
+  border-radius: 10px;
+}
+.price_table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.price_table table thead tr th {
+  width: 40%;
+  padding: 40px;
+  border-bottom: 2px solid #c2bdd0;
+  border-right: 2px solid #c2bdd0;
+  font-size: 28px;
+  font-weight: normal;
+}
+.price_table table thead tr th:first-child {
+  width: 20%;
+}
+.price_table table thead tr th:last-child {
+  border-right: 0;
+}
+.price_table table tbody {
+  border-collapse: collapse;
+}
+.price_table table tbody tr {
+  border-bottom: 2px solid #c2bdd0;
+}
+.price_table table tbody tr:last-child {
+  border-bottom: 0;
+}
+.price_table table tbody tr th img {
+  margin: 30px auto;
+}
+.price_table table tbody tr td {
+  border-left: 2px solid #c2bdd0;
+  padding: 30px auto;
+}
+.price_table table tbody tr td .purple {
+  display: inline-block;
+  background-color: #a18ed7;
+  color: white;
+  font-size: 22px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  letter-spacing: 2px;
+}
+.price_table table tbody tr td ul {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 20px;
+}
+.price_table table tbody tr td ul li {
+  font-size: 20px;
+  list-style: none;
+  line-height: 2em;
+}
+.price_table table tbody tr td ul li .white {
+  color: white;
+}
+.price_table table tbody tr:last-child {
+  border-bottom: 0;
+}
+
+/*# sourceMappingURL=price_style.css.map */

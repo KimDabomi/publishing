@@ -1,0 +1,117 @@
+* {margin: 0; padding: 0;}
+.class_notice {
+    width: 80%;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    .yellow {
+        color: #fff288;
+    }
+    .green {
+        color: #b1dd8e;
+    }
+    .blue {
+        color: #6ba1ff;
+    }
+    .red {
+        color: red;
+    }
+    .gray {
+        color: gray;
+    }
+    h4 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: normal;
+    }
+    .steps {
+        width: 60%;
+        margin: 30px auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #a18ed7;
+        font-size: 26px;
+        color: white;
+    }
+    ul {
+        width: 60%;
+        margin: auto;
+        text-align: left;
+        li {
+            font-size: 20px;
+            margin-left: 10px;
+            line-height: 1.75em;
+        }
+    }
+}
+.price_table {
+    width: 85%;
+    margin: 80px auto;
+    border-radius: 10px;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        thead {
+            tr {
+                th {
+                    width: 40%;
+                    padding: 40px;
+                    border-bottom: 2px solid #c2bdd0;
+                    border-right: 2px solid #c2bdd0;       
+                    font-size: 28px;
+                    font-weight: normal;
+                    &:first-child {
+                        width: 20%;
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+        tbody {
+           border-collapse: collapse;
+            tr {
+                border-bottom: 2px solid #c2bdd0;
+                &:last-child {
+                    border-bottom: 0;
+                }
+                th {
+                    img {
+                        margin: 30px auto;
+                    }
+                }
+                td {
+                    border-left: 2px solid #c2bdd0;
+                    padding: 30px auto;
+                    .purple {
+                        display: inline-block;
+                        background-color: #a18ed7;
+                        color: white;
+                        font-size: 22px;
+                        padding: 10px 20px;
+                        margin-left: 20px;
+                        letter-spacing: 2px;
+                    }
+                    ul {
+                        vertical-align: middle;
+                        display: inline-block;
+                        margin-left: 20px;
+                        li {
+                            font-size: 20px;
+                            list-style: none;
+                            line-height: 2em;
+                            .white {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}

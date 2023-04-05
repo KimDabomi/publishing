@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        .footer {
+            width: 90%;
+            margin: auto;
+            padding: 70px;
+            position: relative;
+            background-color: rgba(0,0,0,.1);
+            display: flex;
+        }
+        .footer .left_logo {
+            position: absolute;
+            left: 2%;
+            top: 10%;
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+        .footer .left_logo .logo_img {
+            width: 30%;
+            margin: 20px 0 -20px 50px;
+        }
+        .footer .li_box {
+            width: 25%;
+            top: 8%;
+        }
+        .footer .li_box h4 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .footer .li_box ul li {
+            list-style: none;
+        }
+        .footer .li_box ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .footer .service {
+            position: absolute;
+            left: 25%;
+        }
+        .footer .operation {
+            position: absolute;
+            left: 50%;
+        }
+        .footer .cs_center {
+            position: absolute;
+            left: 75%;
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="left_logo">
+            <img src="./assets/img/logo.png" alt="logo" class="logo_img" />
+        </div>
+        <div class="service li_box">
+            <h4>서비스 목록</h4>
+            <ul>
+                <li><a href="">롤대리 랭크</a></li>
+                <li><a href="">롤듀오 랭크</a></li>
+                <li><a href="">배치 고사</a></li>
+                <li><a href="">1:1 특강</a></li>
+            </ul>
+        </div>
+        <div class="operation li_box">
+            <h4>운영내역</h4>
+            <ul>
+                <li><a href="">기사라인업</a></li>
+                <li><a href="">작업후기</a></li>
+                <li><a href="">롤토체스</a></li>
+                <li><a href="">육성 패키지</a></li>
+            </ul>
+        </div>
+        <div class="cs_center li_box">
+            <h4>서비스센터</h4>
+            <ul>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">롤대리</a></li>
+                <li><a href="">랭크체험</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

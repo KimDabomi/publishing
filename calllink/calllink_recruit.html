@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calllink - recruit</title>
+    <!-- <link rel="stylesheet" href="./new/css/recuit.css" /> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 960px;
+        }
+
+        .container {
+            width: 98%;
+            margin: 60px auto;
+        }
+
+        .top_banner {
+            background-color: #0155b1;
+            color: white;
+            border-radius: 25px;
+            padding: 80px 60px;
+        }
+
+        .top_banner .title {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            margin-bottom: 70px;
+        }
+
+        .top_banner h2 {
+            font-size: 60px;
+            line-height: 1.5em;
+            margin-bottom: 70px;
+        }
+
+        .top_banner .txt {
+            font-size: 40px;
+            line-height: 1.7em;
+            font-weight: 500;
+            margin-bottom: 140px;
+        }
+
+        .top_banner .top_banner_footer {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+
+        .top_banner .top_banner_footer span {
+            font-size: 60px;
+            margin-left: 270px;
+        }
+
+        .tags {
+            margin: 230px auto;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: bold;
+        }
+
+        .tags div {
+            border-radius: 50px;
+            vertical-align: middle;
+            box-sizing: border-box;
+            display: inline-block;
+            margin: 0 19px 20px 0;
+        }
+
+        .tags .gray_box {
+            background-color: #cecece;
+            font-size: 24px;
+            padding: 25px 30px;
+            height: 70px;
+            margin-top: 10px;
+        }
+
+        .tags .gray_box:first-child {
+            margin-left: 90px;
+        }
+
+        .tags .gray_box:nth-child(3) {
+            margin-right: 0;
+            margin-left: 10px;
+        }
+
+        .tags .gray_box:nth-of-type(8) {
+            margin-left: 90px;
+            font-size: 30px;
+            padding-top: 20px;
+        }
+
+        .tags .black_box {
+            background-color: #484848;
+            color: white;
+            font-size: 30px;
+            padding: 30px 40px;
+        }
+
+        .tags .blue_box {
+            background-color: #0155b1;
+            color: white;
+            font-size: 30px;
+            padding: 30px 40px;
+        }
+
+        .google_god {
+            width: 100%;
+            margin-bottom: 230px;
+        }
+
+        .google_god h1 {
+            width: 82%;
+            margin: 0 auto 80px;
+            font-size: 60px;
+            line-height: 1.25em;
+        }
+
+        .google_god span {
+            color: #0155b1;
+        }
+
+        .google_god p {
+            font-size: 30px;
+            line-height: 1.75em;
+            width: 82%;
+            margin: 0 auto 120px;
+        }
+
+        .google_god .layout_wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .google_god .layout_wrap .blue_div {
+            background-color: #0155b1;
+            border-radius: 25px;
+            color: white;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .google_god .layout_wrap .first_div {
+            width: 100%;
+            padding: 120px 0 260px 70px;
+        }
+
+        .google_god .layout_wrap img {
+            margin: 30px 30px 0 0;
+            display: inline;
+        }
+
+        .google_god .layout_wrap img:first-of-type {
+            width: 65%;
+        }
+
+        .google_god .layout_wrap img:nth-of-type(2) {
+            margin-right: 0;
+        }
+
+        .google_god .layout_wrap .last_div {
+            display: inline;
+            margin-top: 30px;
+            width: 65%;
+            height: 405px;
+            text-align: right;
+            padding: 50px 70px;
+            box-sizing: border-box;
+            font-weight: normal;
+        }
+
+        .google_god .layout_wrap .last_div h1 {
+            font-size: 55px;
+            margin-right: 0;
+            line-height: 1.25em;
+            margin-bottom: 0;
+        }
+
+        .google_god .layout_wrap .last_div p {
+            margin-top: 70px;
+            margin-right: 0;
+            margin-bottom: 0;
+            color: #cecece;
+        }
+
+        .google_god .layout_wrap .last_div h3 {
+            font-size: 30px;
+        }
+
+        .goal01 {
+            width: 100%;
+            margin-bottom: 230px;
+        }
+
+        .goal01 h1 {
+            width: 82%;
+            margin: 0 auto 80px;
+            font-size: 58px;
+            line-height: 1.25em;
+        }
+
+        .goal01 span {
+            color: #0155b1;
+        }
+
+        .goal01 p {
+            font-size: 30px;
+            line-height: 1.75em;
+            width: 82%;
+            margin: 0 auto 120px;
+        }
+
+        .goal01 .gray_bg {
+            background-color: rgb(250, 250, 250);
+            width: 98%;
+            margin: 0 auto 150px;
+            border-radius: 25px;
+            padding-bottom: 150px;
+        }
+
+        .goal01 .gray_bg img {
+            width: 80%;
+            margin: 140px 90px;
+        }
+
+        .goal01 .gray_bg .boxes_wrap {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .goal01 .gray_bg .boxes_wrap .content_box {
+            width: 48%;
+            margin-right: 4%;
+            border-top: 5px solid black;
+        }
+
+        .goal01 .gray_bg .boxes_wrap .content_box h3 {
+            font-size: 35px;
+            margin: 40px 0;
+        }
+
+        .goal01 .gray_bg .boxes_wrap .content_box:nth-child(2),
+        .goal01 .gray_bg .boxes_wrap .content_box:nth-child(4) {
+            margin-right: 0;
+        }
+
+        .goal01 .gray_bg .boxes_wrap .content_box p {
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+
+        .goal02 {
+            width: 100%;
+            margin-bottom: 230px;
+        }
+
+        .goal02 h1 {
+            width: 82%;
+            margin: 0 auto 80px;
+            font-size: 58px;
+            line-height: 1.25em;
+        }
+
+        .goal02 span {
+            color: #0155b1;
+        }
+
+        .goal02 .table {
+            border-top: 3px solid #ccc;
+            width: 80%;
+            margin: 120px auto;
+        }
+
+        .goal02 .table .column {
+            display: flex;
+            border-bottom: 3px solid #ccc;
+        }
+
+        .goal02 .table .column .th {
+            width: 25%;
+            color: #0155b1;
+            font-weight: bold;
+            font-size: 36px;
+            text-align-last: left;
+            padding: 40px 0;
+            line-height: 1.5em;
+        }
+
+        .goal02 .table .column .td {
+            font-size: 27px;
+            line-height: 1.5em;
+            color: black;
+            padding: 40px 0 40px 70px;
+        }
+
+        .details {
+            margin-bottom: 140px;
+        }
+
+        .details .blue_div {
+            background-color: #0155b1;
+            border-radius: 25px;
+            color: white;
+            font-size: 30px;
+            line-height: 2.75em;
+            font-weight: bold;
+            padding: 180px 70px;
+        }
+
+        .details .detail_box {
+            margin-top: 140px;
+            border-top: 10px solid #0155b1;
+        }
+
+        .details .detail_box h3 {
+            font-size: 44px;
+            margin: 40px 0 80px 0;
+        }
+
+        .details .detail_box .position,
+        .details .detail_box .condition,
+        .details .detail_box .way {
+            width: 99%;
+            margin: auto;
+            border-bottom: 2px solid black;
+        }
+
+        .details .detail_box .position thead th,
+        .details .detail_box .condition thead th,
+        .details .detail_box .way thead th {
+            color: #0155b1;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: left;
+            padding-bottom: 30px;
+        }
+
+        .details .detail_box .position tbody,
+        .details .detail_box .condition tbody,
+        .details .detail_box .way tbody {
+            text-align: left;
+        }
+
+        .details .detail_box .position tbody th,
+        .details .detail_box .condition tbody th,
+        .details .detail_box .way tbody th {
+            vertical-align: top;
+            font-size: 44px;
+            font-weight: normal;
+            box-sizing: border-box;
+            width: 30%;
+        }
+
+        .details .detail_box .position tbody th div,
+        .details .detail_box .condition tbody th div,
+        .details .detail_box .way tbody th div {
+            width: 100%;
+            border-top: 2px solid black;
+            padding: 60px 0;
+        }
+
+        .details .detail_box .position tbody td,
+        .details .detail_box .condition tbody td,
+        .details .detail_box .way tbody td {
+            width: 25%;
+            font-size: 25px;
+            line-height: 1.75em;
+        }
+
+        .details .detail_box .position tbody td div,
+        .details .detail_box .condition tbody td div,
+        .details .detail_box .way tbody td div {
+            width: 100%;
+            border-top: 2px solid black;
+            padding: 60px 0;
+            margin: 0;
+        }
+
+        .details .detail_box .position tbody td div ul,
+        .details .detail_box .condition tbody td div ul,
+        .details .detail_box .way tbody td div ul {
+            width: 90%;
+            margin-left: 10%;
+        }
+
+        .details .detail_box .position tbody td div ul li,
+        .details .detail_box .condition tbody td div ul li,
+        .details .detail_box .way tbody td div ul li {
+            list-style: disc;
+        }
+
+        .details .detail_box img {
+            width: 100%;
+        }
+
+        /*# sourceMappingURL=recuit.css.map */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top_banner">
+            <p class="title">2023 RECRUIT</p>
+            <h2>
+                이제,<br />
+                새로운 전문가를<br />
+                만나 볼 순간
+            </h2>
+            <p class="txt">
+                우리의 브레인과 함께라면<br />
+                성공의 최적화를 이룰 수 있습니다.
+            </p>
+            <p class="top_banner_footer">
+                CALLLINK<span>최적화 그 이상.</span>
+            </p>
+        </div>
+        <div class="tags">
+            <div class="gray_box">최단기간</div>
+            <div class="black_box">구글 검색 1위</div>
+            <div class="blue_box">대한민국 최고 기록</div>
+            <div class="gray_box">구글신</div>
+            <div class="blue_box">국내 1호 SEO 매니저</div>
+            <div class="blue_box">국회의원 표창</div>
+            <div class="gray_box">SEO 최적화</div>
+            <div class="gray_box">혁신적인 기술력</div>
+            <div class="black_box">검색엔진 최적화</div>
+            <div class="gray_box">성공적인 전략 </div>
+        </div>
+        <div class="google_god">
+            <h1>
+                우리의 이러한 성과는<br />
+                업계에서 전문성을 인정 받고<br />
+                <span>구글신</span>으로 활동하는
+            </h1>
+            <p>
+                SEO 최적화 전문가 1호, 김태웅 대표님을 중심으로<br />
+                우리의 프로다운 실력과 원칙을 기반으로 성장하고 있는<br />
+                선도적인 마케팅 회사입니다.
+            </p>
+            <div class="layout_wrap">
+                <div class="blue_div first_div">CALLLINK</div>
+                <img src="./new/img/ceo_pic.png" alt="ceo_pic" />
+                <img src="./new/img/citation.png" alt="citation" />
+                <img src="./new/img/record.png" alt="record" />
+                <div class="blue_div last_div">
+                    <h1>
+                        대한민국<br />
+                        최고기록 인증
+                    </h1>
+                    <p>국내 1호 SEO 매니저</p>
+                    <h3>CALLLINK 대표이사 김태웅</h3>
+                </div>
+            </div>
+        </div>
+        <div class="goal01">
+            <h1>
+                우리는 프로패셔널한<br />
+                <span>구글 SEO 최적화</span>를 전문으로 하는<br />
+                마케팅 회사입니다.
+            </h1>
+            <p>
+                콜링크는 구글 SEO 최적화 및 검색 엔진 최적화를 전문으로 하며<br />
+                고객의 웹사이트가 구글 검색 엔진에 정확하게 노출되도록 돕고<br />
+                이를 통해 매출 증대와 비즈니스 성장에 기여하고 있습니다.
+            </p>
+            <div class="gray_bg">
+                <img src="./new/img/diagram.png" alt="diagram" />
+                <div class="boxes_wrap">
+                    <div class="content_box">
+                        <h3>사이트맵 최적화</h3>
+                        <p>
+                            사이트맵을 효과적으로<br />
+                            구성하여 구글 검색 엔진이<br />
+                            웹사이트의 페이지를<br />
+                            쉽게 찾을 수 있도록 돕습니다.
+                        </p>
+                    </div>
+                    <div class="content_box">
+                        <h3>구글 스피드 최적화</h3>
+                        <p>
+                            웹사이트의 로딩 속도를 개선하여<br />
+                            사용자 경험을 높이고,<br />
+                            검색 엔진 순위를 상승시킵니다.
+                        </p>
+                    </div>
+                    <div class="content_box">
+                        <h3>HTML 최적화</h3>
+                        <p>
+                            웹사이트의 HTML코드를<br />
+                            정리하여 검색 엔진이 페이<br />
+                            합니다.
+                        </p>
+                    </div>
+                    <div class="content_box">
+                        <h3>백링크 서비스</h3>
+                        <p>
+                            웹사이트에 대한 참조 링크르<br />
+                            구축하여 구글 검색 엔진의<br />
+                            신뢰도를 높이고, 순위를<br />
+                            향상시킵니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goal02">
+            <h1>
+                우리는 함께 <span>성장</span>하고<br />
+                청년 창업가들을 <span>지원</span>하며<br />
+                지역 사회와 <span>발전</span>해 나갑니다.
+            </h1>
+            <div class="table">
+                <div class="column">
+                    <div class="th">
+                        소상공인<br />
+                        청년 창업가<br />
+                        지원
+                    </div>
+                    <div class="td">
+                        소상공인 및 청년 창업가들이 국제시장에서<br />
+                        경쟁력을 높일 수 있도록 다양한 교육 프로그램<br />
+                        및 지원 사업을 통해 지속적으로 협력하고<br />
+                        성장할 계획입니다.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="th">
+                        지속적인<br />
+                        연구와 혁신
+                    </div>
+                    <div class="td">
+                        콜링크는 SEO 및 디지털 마케팅 분야의<br />
+                        최첨단 기술과 지식 활용하여 고객들에게<br />
+                        최상의 서비스를 제공하기 위해<br />
+                        끊임없이 연구하고 혁신합니다.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="th">
+                        사회적<br />
+                        책임 및 지역<br />
+                        사회 발전
+                    </div>
+                    <div class="td">
+                        콜링크는 사회적 책임을 다하는 기업으로서의<br />
+                        역할로 지역 사회와 함께 성장하며,<br />
+                        다양한 사회적 기여활동을 통해 지역 사회<br />
+                        발전에 기여할 계획입니다.
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="th">
+                        전문성과<br />
+                        신뢰성<br />
+                        강화
+                    </div>
+                    <div class="td">
+                        콜링크는 고객들의 성공을 위해<br />
+                        최고의 전문가들로 구성된 팀을 통해<br />
+                        SEO 및 디지털 마케팅 전문성과 신뢰성을<br />
+                        높여나갈 것입니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="blue_div">
+                <h1>
+                    아무리 노력해도 변화가 없다면<br />
+                    노력이 아닌 전략을 바꿔야 할 때
+                </h1>
+            </div>
+            <div class="detail_box">
+                <h3>모집 부문 및 상세내용</h3>
+                <table class="position">
+                    <thead>
+                        <th>모집부문</th>
+                        <th>담당업무</th>
+                        <th>자격요건</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <div>
+                                    <b>SEO 전문가</b><br />
+                                    (신입/2명)
+                                </div>
+                            </th>
+                            <td>
+                                <div>
+                                    <ul>
+                                        <li>웹 사이트 진단(Audit)을<br />
+                                            통한 SEO 전략 수립</li>
+                                        <li>검색 노출 개선을 위한<br />
+                                            퍼포먼스 SEO 실행</li>
+                                        <li>검색엔진 친화적 사이트<br />
+                                            운영을 위한 SEO 이슈 관리</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <ul>
+                                        <li>영어 가능자</li>
+                                        <li>새로운 것에 대한<br />
+                                            학습 의지가 높으신 분</li>
+                                        <li>"왜"에 대하여<br />
+                                            지속적으로 고민하고<br />
+                                            답을 찾으려고 하시는 분</li>
+                                        <li>초대졸 이상</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div>
+                                    <b>SEO 전문가</b><br />
+                                    (신입/경력)
+                                </div>
+                            </th>
+                            <td>
+                                <div>
+                                    <ul>
+                                        <li>웹 사이트 진단(Audit)을<br />
+                                            통한 SEO 전략 수립</li>
+                                        <li>검색 노출 개선을 위한<br />
+                                            퍼포먼스 SEO 실행</li>
+                                        <li>검색엔진 친화적 사이트<br />
+                                            운영을 위한 SEO 이슈 관리</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <ul>
+                                        <li>영어 가능자</li>
+                                        <li>새로운 것에 대한<br />
+                                            학습 의지가 높으신 분</li>
+                                        <li>"왜"에 대하여<br />
+                                            지속적으로 고민하고<br />
+                                            답을 찾으려고 하시는 분</li>
+                                        <li>초대졸 이상</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="detail_box">
+                <h3>근무조건</h3>
+                <table class="condition">
+                    <thead>
+                        <th>근무형태</th>
+                        <th>근무일시</th>
+                        <th>근무지</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>
+                                    <ul>
+                                        <li>정규직</li>
+                                        <li>수습기간 3개월</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <ul>
+                                        <li>주 5일(월-금)</li>
+                                        <li>09:00 - 18:00</li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    서울시 강서구 마곡중앙로 161-8 두산더랜드파크 A동 414호
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="detail_box">
+                <h3>전형절차</h3>
+                <img src="./new/img/steps.png" alt="steps" />
+            </div>
+            <div class="detail_box">
+                <h3>접수기간 및 방법</h3>
+                <table class="way">
+                    <thead>
+                        <th>접수기간</th>
+                        <th>접수방법</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>2023년 3월 31일 ~ 4월 30일까지</div>
+                            </td>
+                            <td>
+                                <div>사람인 입사지원</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <img src="./new/img/foot_banner.png" alt="foot_banner" />
+    </div>
+</body>
+
+</html>

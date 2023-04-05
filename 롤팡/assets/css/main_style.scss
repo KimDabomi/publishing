@@ -1,0 +1,54 @@
+* {margin: 0; padding: 0;}
+.ban_wrap {
+    width: 90%;
+    margin: 80px auto;
+    ul {
+        li {
+            margin-right: 9px;
+            display: inline;
+            list-style: none;
+            img {
+                width: 24%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.qna_wrap {
+    width: 80%;
+    margin: 50px auto;
+    img {
+        width: 48%;
+        margin-left: 25%;
+    }
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        margin: 20px;
+    }
+    .qna_box {
+        background-color: rgba(0,0,0,0.05);
+        margin-bottom: 15px;
+        padding: 30px 30px;
+        border-radius: 10px;
+        h3 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            span {
+                color: red;
+            }
+        }
+        p {
+            font-size: 22px;
+            margin-left: 35px;
+            span {
+                color: green;
+                font-weight: bold;
+            }
+        }
+    }
+}

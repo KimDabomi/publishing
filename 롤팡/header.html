@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header_wrap {
+            width: 90%;
+            margin: auto;
+            padding: 70px;
+            position: relative;
+        }
+
+        .header_wrap .left_logo {
+            position: absolute;
+            left: 2%;
+            top: 2%;
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        .header_wrap .left_logo .logo_img {
+            width: 30%;
+            margin: 20px 0 -20px 50px;
+        }
+
+        .header_wrap .left_logo .kakao_img {
+            width: 90%;
+            margin: 0;
+        }
+
+        .header_wrap .right_menu {
+            position: absolute;
+            right: 2%;
+            top: 2%;
+        }
+
+        .header_wrap .right_menu ul {
+            display: flex;
+        }
+
+        .header_wrap .right_menu ul li {
+            list-style: none;
+            margin-top: 55px;
+            margin-right: 50px;
+        }
+        .header_wrap .right_menu ul li:hover {
+            background-color: #fef8a4;
+        }
+
+        .header_wrap .right_menu ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+        }
+
+
+
+        .menu {
+            position: relative;
+        }
+
+
+        .header_wrap .right_menu .menu .menu-trigger {
+            cursor: pointer;
+        }
+
+        .header_wrap .right_menu .menu .menu-list {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -100%;
+            background-color: #9d9cca;
+            width: 180px;
+            border-radius: 20px;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        .header_wrap .right_menu .menu .menu-list li {
+            padding: 0;
+            line-height: 0;
+            text-align: center;
+        }
+        .header_wrap .right_menu .menu .menu-list li a:hover {
+            background-color: #797895;
+        }
+        .header_wrap .right_menu .menu .menu-list li a {
+            font-size: 20px;
+            color: white;
+            padding: 10px 5;
+            margin-left: 45px;
+            text-shadow: 1px 1px black;
+        }
+        .header_wrap .right_menu .menu .menu-list.show {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header_wrap">
+        <div class="left_logo">
+            <img src="./assets/img/logo.png" alt="logo" class="logo_img" />
+            <a href="https://open.kakao.com/o/sKKvLcbf" aria-lable="top_kakao"><img src="./assets/img/top_kakao_ban.png"
+                    alt="top_kakao_ban" class="kakao_img" /></a>
+        </div>
+        <div class="right_menu">
+            <ul>
+                <li><a href="https://xn--bp2b020c.com/notice" aria-label="notice">공지사항</a></li>
+                <li>
+                    <div class="menu">
+                        <a class="menu-trigger">가격표</a>
+                        <ul class="menu-list">
+                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_duo">승당&듀오</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_position">배치고사</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_one">1:1 특강</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_loltft">롤토체스</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_rankexpre">랭겜 체험</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_nur">육성</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://xn--bp2b020c.com/lineup" aria-label="lineup">기사라인업</a></li>
+                <li><a href="https://xn--bp2b020c.com/review" aria-label="review">작업후기</a></li>
+            </ul>
+        </div>
+        <script>
+            const menuTrigger = document.querySelector('.menu-trigger');
+            const menuList = document.querySelector('.menu-list');
+
+            menuTrigger.addEventListener('click', function () {
+                menuList.classList.toggle('show');
+            });
+        </script>
+    </header>
+</body>
+
+</html>

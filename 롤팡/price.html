@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<!-- <head>
+    <link rel="stylesheet" href="./assets/css/price_style.css" />
+</head> -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .class_notice {
+        width: 80%;
+        margin: 80px auto;
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .class_notice .yellow {
+        color: #fff288;
+    }
+
+    .class_notice .green {
+        color: #b1dd8e;
+    }
+
+    .class_notice .blue {
+        color: #6ba1ff;
+    }
+
+    .class_notice .red {
+        color: red;
+    }
+
+    .class_notice .gray {
+        color: gray;
+    }
+
+    .class_notice h4 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: normal;
+    }
+
+    .class_notice .steps {
+        width: 60%;
+        margin: 30px auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #a18ed7;
+        font-size: 26px;
+        color: white;
+    }
+
+    .class_notice ul {
+        width: 60%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .class_notice ul li {
+        font-size: 20px;
+        margin-left: 10px;
+        line-height: 1.75em;
+    }
+
+    .price_table {
+        width: 85%;
+        margin: 80px auto;
+        border-radius: 10px;
+    }
+
+    .price_table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .price_table table thead tr th {
+        width: 40%;
+        padding: 40px;
+        border-bottom: 2px solid #c2bdd0;
+        border-right: 2px solid #c2bdd0;
+        font-size: 28px;
+        font-weight: normal;
+    }
+
+    .price_table table thead tr th:first-child {
+        width: 20%;
+    }
+
+    .price_table table thead tr th:last-child {
+        border-right: 0;
+    }
+
+    .price_table table tbody {
+        border-collapse: collapse;
+    }
+
+    .price_table table tbody tr {
+        border-bottom: 2px solid #c2bdd0;
+    }
+
+    .price_table table tbody tr:last-child {
+        border-bottom: 0;
+    }
+
+    .price_table table tbody tr th img {
+        margin: 30px auto;
+    }
+
+    .price_table table tbody tr td {
+        border-left: 2px solid #c2bdd0;
+        padding: 30px auto;
+    }
+
+    .price_table table tbody tr td .purple {
+        display: inline-block;
+        background-color: #a18ed7;
+        color: white;
+        font-size: 22px;
+        padding: 10px 20px;
+        margin-left: 20px;
+        letter-spacing: 2px;
+    }
+
+    .price_table table tbody tr td ul {
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .price_table table tbody tr td ul li {
+        font-size: 20px;
+        list-style: none;
+        line-height: 2em;
+    }
+
+    .price_table table tbody tr td ul li .white {
+        color: white;
+    }
+
+    .price_table table tbody tr:last-child {
+        border-bottom: 0;
+    }
+
+    /*# sourceMappingURL=price_style.css.map */
+</style>
+
+<body>
+    <div class="class_notice">
+        <h4>승당, 듀오 강의 진행 과정</h4>
+        <div class="steps">
+            <span class="yellow">카톡 상담/접수</span> - 입금 - 기사배정 - 작업진행 - <span class="green">완료</span>
+        </div>
+        <ul>
+            <li>원하시는 티어까지 <span class="blue">책임</span>지고 함께합니다.</li>
+            <li><span class="red">강등위기, 승급전 패배</span> mmr에 따라 추가비용이 발생할 수 있습니다.</li>
+            <li>승당강의는 15승 진행시 +1승 서비스를 제공합니다.<br />
+                듀오강의는 10판 진행시 +1판 서비스를 제공합니다.</li>
+            <li>정해진 승리 수를 승/패로 계산하여 <span class="red">1패</span> 시 <span class="blue">2승</span>을 보상해드립니다. <span
+                    class="gray"><br />
+                    Ex) 6승 2패 = 4승</span></li>
+            <li>신청 즉시 기사님 배정 후 작업을 시작합니다.</li>
+        </ul>
+    </div>
+
+    <div class="price_table">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>승당 강의</th>
+                    <th>듀오 강의</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><img src="./assets/img/unrank_icon.png" alt="unrank_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>언랭_₩ 10,000</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>언랭_₩ 8,000</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/img/silver_icon.png" alt="silver_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>아이언_₩ 5,000</li>
+                            <li>브론즈_₩ 5,000</li>
+                            <li>실버_₩ 5,500</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>아이언_₩ 5,000</li>
+                            <li>브론즈_₩ 5,000</li>
+                            <li>실버_₩ 5,500</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/img/gold_icon.png" alt="gold_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>골드_₩ 6,000</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>골드_₩ 6,500</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/img/pla_icon.png" alt="pla_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>플레티넘 2~4_₩ 9,000</li>
+                            <li>플레티넘 1_₩ 10,000</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>플레티넘 2~4_₩ 9,000</li>
+                            <li>플레티넘 1_₩ 10,000</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/img/dia_icon.png" alt="dia_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>다이아 4_₩ 13,000</li>
+                            <li>다이아 3_₩ 16,000</li>
+                            <li>다이아 2_₩ 20,000</li>
+                            <li>다이아 1_₩ 25,000</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>다이아 4_₩ 13,000</li>
+                            <li>다이아 3_₩ 14,000</li>
+                            <li>다이아 2_₩ 16,000</li>
+                            <li>다이아 1_₩ 20,000</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="./assets/img/master_icon.png" alt="master_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>0~50점<span class="white">00</span>_₩ 60,000</li>
+                            <li>50~100점<span class="white">0</span>_₩ 75,000</li>
+                            <li>100~150점_₩ 90,000</li>
+                            <li>150~200점_₩ 110,000</li>
+                            <li>200~250점_₩ 130,000</li>
+                            <li>250~300점_₩ 150,000</li>
+                            <li>300~400점_₩ 180,000</li>
+                            <li>400~500점_₩ 210,000</li>
+                            <li>500~600점_₩ 240,000</li>
+                            <li>600~700점_₩ 280,000</li>
+                            <li>700~800점_₩ 330,000</li>
+                            <li>800~900점_₩ 390,000</li>
+                            <li>900점~<span class="white">000</span>_₩ 420,000</li>
+
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>• 마스터, 그랜드마스터, 챌린저 구간은 별도 문의</li>
+                            <li>• 자유 랭크 별도 문의</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
