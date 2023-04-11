@@ -1,0 +1,20 @@
+
+.swiper {
+  width: 70%;
+  margin: 80px auto;
+}
+
+.swiper-slide {
+  width: 30%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .img {
+  display: block;
+  object-fit: cover;
+}

@@ -3,12 +3,29 @@
   padding: 0;
 }
 
+.price_top_ban_wrap {
+  width: 90%;
+  margin: 80px auto;
+}
+.price_top_ban_wrap ul li {
+  margin-right: 9px;
+  display: inline;
+  list-style: none;
+}
+.price_top_ban_wrap ul li img {
+  width: 15.7%;
+}
+.price_top_ban_wrap ul li:last-child {
+  margin-right: 0;
+}
+
 .class_notice {
   width: 80%;
   margin: 80px auto;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
+  background-color: #fff;
 }
 .class_notice .yellow {
   color: #fff288;
@@ -54,6 +71,7 @@
   width: 85%;
   margin: 80px auto;
   border-radius: 10px;
+  background-color: #fff;
 }
 .price_table table {
   width: 100%;

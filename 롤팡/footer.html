@@ -12,8 +12,14 @@
             margin: auto;
             padding: 70px;
             position: relative;
-            background-color: rgba(0,0,0,.1);
+            color: white;
+            background-color: black;
             display: flex;
+        }
+        .footer .flex_box {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 50px;
         }
         .footer .left_logo {
             position: absolute;
@@ -28,7 +34,7 @@
             margin: 20px 0 -20px 50px;
         }
         .footer .li_box {
-            width: 25%;
+            width: 18%;
             top: 8%;
         }
         .footer .li_box h4 {
@@ -40,53 +46,77 @@
         }
         .footer .li_box ul li a {
             text-decoration: none;
-            color: black;
+            color: white;
             font-size: 18px;
         }
         .footer .service {
             position: absolute;
-            left: 25%;
+            left: 20%;
         }
         .footer .operation {
             position: absolute;
-            left: 50%;
+            left: 36%;
         }
         .footer .cs_center {
             position: absolute;
-            left: 75%;
+            left: 56%;
+        }
+        .footer .contact {
+            position: absolute;
+            left: 76%;
+        }
+        .footer .copyright_box {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <footer class="footer">
-        <div class="left_logo">
-            <img src="./assets/img/logo.png" alt="logo" class="logo_img" />
+        <div class="flex_box">
+            <div class="left_logo">
+                <img src="./assets/img/logo.png" alt="logo" class="logo_img" />
+            </div>
+            <div class="service li_box">
+                <h4>SERVICE</h4>
+                <ul>
+                    <li><a href="https://xn--bp2b020c.com/price">롤대리 랭크</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price">롤듀오 랭크</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_position">배치 고사</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_one">1:1 특강</a></li>
+                </ul>
+            </div>
+            <div class="operation li_box">
+                <h4>WORK</h4>
+                <ul>
+                    <li><a href="https://xn--bp2b020c.com/lineup">기사라인업</a></li>
+                    <li><a href="https://xn--bp2b020c.com/review">작업후기</a></li>
+                    <li><a href="https://xn--bp2b020c.com/loltft">롤토체스</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_nur">육성 패키지</a></li>
+                </ul>
+            </div>
+            <div class="cs_center li_box">
+                <h4>SERVICE CENTER</h4>
+                <ul>
+                    <li><a href="https://xn--bp2b020c.com/notice">공지사항</a></li>
+                    <li><a href="https://xn--bp2b020c.com">롤대리</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_rankexpre">랭크체험</a></li>
+                </ul>
+            </div>
+            <div class="contact li_box">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li>항상 고객님의 계정을 제 계정처럼<br />
+                        소중하게 여기겠습니다.</li>
+                    <li>카카오톡_lolpang</li>
+                </ul>
+            </div>
         </div>
-        <div class="service li_box">
-            <h4>서비스 목록</h4>
-            <ul>
-                <li><a href="">롤대리 랭크</a></li>
-                <li><a href="">롤듀오 랭크</a></li>
-                <li><a href="">배치 고사</a></li>
-                <li><a href="">1:1 특강</a></li>
-            </ul>
-        </div>
-        <div class="operation li_box">
-            <h4>운영내역</h4>
-            <ul>
-                <li><a href="">기사라인업</a></li>
-                <li><a href="">작업후기</a></li>
-                <li><a href="">롤토체스</a></li>
-                <li><a href="">육성 패키지</a></li>
-            </ul>
-        </div>
-        <div class="cs_center li_box">
-            <h4>서비스센터</h4>
-            <ul>
-                <li><a href="">공지사항</a></li>
-                <li><a href="">롤대리</a></li>
-                <li><a href="">랭크체험</a></li>
-            </ul>
+        
+        <div class="copyright_box">
+            <span>롤팡</span><span class="copyright">Copyright &copy; 2023 롤팡 All rights reserved</span>
         </div>
     </footer>
 </body>

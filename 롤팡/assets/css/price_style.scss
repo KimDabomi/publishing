@@ -1,10 +1,29 @@
 * {margin: 0; padding: 0;}
+.price_top_ban_wrap {
+    width: 90%;
+    margin: 80px auto;
+    ul {
+        li {
+            margin-right: 9px;
+            display: inline;
+            list-style: none;
+            img {
+                width: 15.7%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
 .class_notice {
     width: 80%;
     margin: 80px auto;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
+    background-color: #fff;
     .yellow {
         color: #fff288;
     }
@@ -49,6 +68,7 @@
     width: 85%;
     margin: 80px auto;
     border-radius: 10px;
+    background-color: #fff;
     table {
         width: 100%;
         border-collapse: collapse;

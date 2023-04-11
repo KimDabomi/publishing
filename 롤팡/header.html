@@ -12,11 +12,14 @@
             padding: 0;
         }
 
+
         .header_wrap {
             width: 90%;
             margin: auto;
             padding: 70px;
             position: relative;
+            background-color: gray;
+
         }
 
         .header_wrap .left_logo {
@@ -53,8 +56,8 @@
             margin-top: 55px;
             margin-right: 50px;
         }
-        .header_wrap .right_menu ul li:hover {
-            background-color: #fef8a4;
+        .header_wrap>.right_menu>ul>li:hover {
+            border-bottom: 2px solid #a18ed7;
         }
 
         .header_wrap .right_menu ul li a {
@@ -62,7 +65,9 @@
             color: black;
             font-size: 22px;
         }
-
+        .header_wrap .right_menu ul li a:hover {
+            color: #a18ed7;
+        }
 
 
         .menu {
@@ -96,8 +101,9 @@
         .header_wrap .right_menu .menu .menu-list li a {
             font-size: 20px;
             color: white;
-            padding: 10px 5;
-            margin-left: 45px;
+            padding: 10px 5px;
+            text-align: center;
+            vertical-align: middle;
             text-shadow: 1px 1px black;
         }
         .header_wrap .right_menu .menu .menu-list.show {
@@ -110,8 +116,8 @@
 <body>
     <header class="header_wrap">
         <div class="left_logo">
-            <img src="./assets/img/logo.png" alt="logo" class="logo_img" />
-            <a href="https://open.kakao.com/o/sKKvLcbf" aria-lable="top_kakao"><img src="./assets/img/top_kakao_ban.png"
+            <a href="https://xn--bp2b020c.com"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/logo.png" alt="logo" class="logo_img" /></a>
+            <a href="https://open.kakao.com/o/sKKvLcbf" aria-lable="top_kakao"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/top_kakao_ban.png"
                     alt="top_kakao_ban" class="kakao_img" /></a>
         </div>
         <div class="right_menu">
@@ -121,12 +127,12 @@
                     <div class="menu">
                         <a class="menu-trigger">가격표</a>
                         <ul class="menu-list">
-                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_duo">승당&듀오</a></li>
-                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_position">배치고사</a></li>
-                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_one">1:1 특강</a></li>
-                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_loltft">롤토체스</a></li>
-                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_rankexpre">랭겜 체험</a></li>
-                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price_nur">육성</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price" aria-label="price">승당&듀오</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price_position" aria-label="price_position">배치고사</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price_one" aria-label="price_one">1:1 특강</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price_loltft" aria-label="price_loltft">롤토체스</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price_rankexpre" aria-label="price_rankexpre">랭겜 체험</a></li>
+                            <li><a href="https://xn--bp2b020c.com/price_nur" aria-label="price_nur">육성</a></li>
                         </ul>
                     </div>
                 </li>
