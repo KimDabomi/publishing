@@ -14,7 +14,8 @@
         background-image: url('https://xn--bp2b020c.com/wp-content/uploads/2023/04/lineup_bg.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top center;
+        background-position: bottom center;
+        font-family: 'JejuGothic';
     }
     .title_ban {
         width: 90%;
@@ -23,6 +24,8 @@
 
     .title_ban img {
         width: 100%;
+        border: 2px solid white;
+        border-radius: 20px;
     }
 
     .lineup_notice {
@@ -53,7 +56,7 @@
     .lineup_notice h4 {
         margin-bottom: 30px;
         font-size: 28px;
-        font-weight: normal;
+        font-weight: bold;
     }
 
     .lineup_notice p {
@@ -116,7 +119,47 @@
         font-size: 20px;
     }
 
-    /*# sourceMappingURL=lineup_style.css.map */
+    @media screen and (max-width:600px) {
+        .title_ban {
+            width: 100%;
+            background-color: white;
+            padding:
+        }
+        .lineup_notice {
+            padding: 20px 0 10px;
+        }
+        .lineup_notice h4 {
+            font-size: 22px;
+        }
+        .lineup_notice p {
+            font-size: 14px;
+        }
+        .driver_wrap {
+            margin: 0;
+            margin: 50px auto 0;
+        }
+        .alert {
+            padding: 20px;
+            margin: 0;
+            margin: 0 auto 50px;
+        }
+        .alert .left {
+            font-size: 17px;
+            padding: 35px 20px 0 0;
+        }
+        .alert .left span {
+            display: block;
+        }
+
+        .alert .left img {
+            width: 70%;
+        }
+
+        .alert .right {
+            font-size: 10px;
+        }
+    }
+
 </style>
 
 <body>
@@ -145,7 +188,7 @@
     <div class="alert">
         <div class="left">
             <img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/logo.png" alt="logo" /><br />
-            기사라인업 안내
+            <span>기사라인업</span> <span>안내</span>
         </div>
         <div class="right">
             업계 유일 챌린저구간까지 작업하는 최대 규모 롤팡은<br />

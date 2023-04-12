@@ -13,10 +13,13 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
+        font-family: 'JejuGothic';
     }
     .price_top_ban_wrap {
-        width: 90%;
+        width: 100%;
         margin: 80px auto;
+        border-radius: 20px;
+        padding: 10px auto;
     }
 
     .price_top_ban_wrap ul li {
@@ -26,7 +29,9 @@
     }
 
     .price_top_ban_wrap ul li img {
-        width: 15.7%;
+        width: 15.5%;
+        border: 2px solid white;
+        border-radius: 10px;
     }
 
     .price_top_ban_wrap ul li:last-child {
@@ -36,7 +41,7 @@
     .class_notice {
         width: 80%;
         margin: 80px auto;
-        padding: 30px;
+        padding: 30px 0;
         border-radius: 10px;
         text-align: center;
         background-color: #fff;
@@ -44,6 +49,9 @@
 
     .class_notice .yellow {
         color: #fff288;
+    }
+    .class_notice .deep_yellow {
+        color: #ffbb18;
     }
 
     .class_notice .green {
@@ -65,27 +73,28 @@
     .class_notice h4 {
         margin-bottom: 30px;
         font-size: 28px;
-        font-weight: normal;
+        font-weight: bold;
+        color: #434242;
     }
 
     .class_notice .steps {
-        width: 60%;
+        width: 80%;
         margin: 30px auto;
-        padding: 20px;
+        padding: 20px 0;
         border-radius: 10px;
         background-color: #a18ed7;
-        font-size: 26px;
+        font-size: 23px;
         color: white;
     }
 
     .class_notice ul {
-        width: 60%;
+        width: 80%;
         margin: auto;
         text-align: left;
     }
 
     .class_notice ul li {
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 10px;
         line-height: 1.75em;
     }
@@ -98,8 +107,7 @@
     }
 
     .price_table table {
-        width: 80%;
-        margin: auto;
+        width: 100%;
         border-collapse: collapse;
     }
 
@@ -109,7 +117,8 @@
         border-bottom: 2px solid #c2bdd0;
         border-right: 2px solid #c2bdd0;
         font-size: 28px;
-        font-weight: normal;
+        font-weight: bold;
+        color: #434242;
     }
 
     .price_table table thead tr th:first-child {
@@ -138,7 +147,7 @@
 
     .price_table table tbody tr td {
         border-left: 2px solid #c2bdd0;
-        padding: 30px auto;
+        padding: 40px auto;
     }
 
     .price_table table tbody tr td .purple {
@@ -152,13 +161,14 @@
     }
 
     .price_table table tbody tr td ul {
+        padding-top: 20px;
         vertical-align: middle;
         display: inline-block;
         margin-left: 20px;
     }
 
     .price_table table tbody tr td ul li {
-        font-size: 20px;
+        font-size: 22px;
         list-style: none;
         line-height: 2em;
     }
@@ -171,9 +181,43 @@
         border-bottom: 0;
     }
 
-    /*# sourceMappingURL=price_style.css.map */
-</style>
 
+    @media screen and (max-width:600px) {
+        .price_top_ban_wrap {
+            padding: 0;
+        }
+        .price_top_ban_wrap ul {
+            margin:0;
+        }
+        .price_top_ban_wrap ul li {
+            margin-right: 2px;
+        }
+        .class_notice {
+            margin: 0;
+            margin: 40px auto 80px;
+        }
+        .class_notice .steps {
+            font-size: 16px;
+        }
+        .class_notice ul li {
+            font-size: 13px;
+        }
+        .price_table table thead tr th {
+            font-size: 24px;
+        }
+        .price_table table tbody tr th img {
+            width: 50%;
+        }
+        .price_table table tbody tr td ul li{
+            font-size: 14px;
+        }
+        .price_table table tbody tr td .purple {
+            padding: 5px;
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+</style>
 <body>
     <div class="price_top_ban_wrap">
         <ul>
@@ -191,9 +235,9 @@
             <span class="yellow">카톡 상담/접수</span> - 입금 - 기사배정 - 작업진행 - <span class="green">완료</span>
         </div>
         <ul>
-            <li>배치 고사는 최소 <span class="yellow">8승</span> <span class="red">2패</span>를 보장합니다.</li>
+            <li>배치 고사는 최소 <span class="deep_yellow">8승</span> <span class="red">2패</span>를 보장합니다.</li>
             <li>대부분 전승으로 마무리되며 <span class="blue">최고의 승률</span>을 자랑합니다.</li>
-            <li>변수가 많은 배치고사지만, 롤팡<span class="blue">최고의 기사님</span>들이 늘 캐리합니다.</li>
+            <li>변수가 많은 배치고사지만, 롤팡 <span class="blue">최고의 기사님</span>들이 늘 캐리합니다.</li>
             <li>신청 즉시 기사님 배정 후 작업을 시작합니다.</li>
         </ul>
     </div>
@@ -257,7 +301,7 @@
                     <th><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/master_icon.png" alt="master_icon" /></th>
                     <td>
                         <ul>
-                            <li>• 마스터, 그랜드마스터, 챌린저 구간은 별도 문의</li>
+                            <li>마스터, 그랜드마스터, 챌린저 구간은 별도 문의</li>
                         </ul>
                     </td>
                 </tr>

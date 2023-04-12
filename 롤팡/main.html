@@ -7,11 +7,14 @@
       margin: 0;
       padding: 0;
     }
-
+    body {
+      font-family: 'JejuGothic';
+    }
     .slideshow {
       position: relative;
       width: 100%;
-      height: 500px;
+      height: 550px;
+      margin: 0;
     }
 
     .slide {
@@ -19,7 +22,6 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
       opacity: 0;
       transition: opacity 1s ease-in-out;
     }
@@ -31,15 +33,13 @@
     .prev,
     .next {
       position: absolute;
-      top: 50%;
+      top: 55%;
       transform: translateY(-50%);
       color: white;
       font-size: 50px;
       cursor: pointer;
     }
-    .prev img, .next img {
-      height: 35px;
-    }
+
     .prev {
       left: 2%;
       z-index: 9999;
@@ -49,7 +49,9 @@
       right: 2%;
       z-index: 9999;
     }
-    
+    .prev img, .next img {
+        height: 35px;
+    }
 
     .ban_wrap {
       width: 95%;
@@ -68,13 +70,14 @@
       width: 100%;
     }
 
+
     .ban_wrap ul li:last-child {
       margin-right: 0;
     }
 
     .qna_wrap {
       width: 80%;
-      margin: 50px auto;
+      margin: 50px auto 150px;
     }
 
     .qna_wrap img {
@@ -83,8 +86,8 @@
     }
 
     .qna_wrap h2 {
-      font-size: 36px;
-      font-weight: bold;
+      font-size: 25px;
+      font-weight: 500;
       text-align: center;
       margin: 20px;
     }
@@ -98,7 +101,7 @@
 
     .qna_wrap .qna_box h3 {
       font-size: 25px;
-      font-weight: normal;
+      font-weight: 500;
       margin-bottom: 10px;
     }
 
@@ -109,55 +112,67 @@
     .qna_wrap .qna_box p {
       font-size: 19px;
       margin-left: 35px;
+       font-weight: 500;
     }
 
     .qna_wrap .qna_box p span {
       color: green;
       font-weight: bold;
     }
-    @media screen and (max-width:750px) {
+    @media screen and (max-width:600px) {
+      .slideshow {
+        height: 280px;
+      }
+      .ban_wrap {
+        margin: 20px 0 0 0;
+      }
       .prev img, .next img {
         height: 15px;
       }
-    }
-    @media screen and (max-width:520px) {
+      .qna_wrap .qna_box {
+
+        padding-top: 20px;
+      }
       .qna_wrap .qna_box h3 {
-        font-size: 22px;
+        font-size: 18px;
+      }
+      .qna_wrap .qna_box p {
+        font-size: 12px;
+        margin: 0;
       }
     }
-    /*# sourceMappingURL=main_style.css.map */
+    
   </style>
 </head>
 
 
 <body>
   <div class="slideshow">
-    <img class="slide active" src="./assets/img/main_ban01.png" alt="slide01" />
-    <img class="slide" src="./assets/img/main_slider.png" alt="slide02" />
-    <a class="prev" onclick="prevSlide()"><img src="./assets/img/prev.png" alt="prev" /></a>
-    <a class="next" onclick="nextSlide()"><img src="./assets/img/next.png" alt="next" /></a>
+    <img class="slide active" src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/main_ban01.png" alt="slide01" />
+    <img class="slide" src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/main_slider.png" alt="slide02" />
+ <a class="prev" onclick="prevSlide()"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/prev.png" alt="prev" /></a>
+    <a class="next" onclick="nextSlide()"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/next.png" alt="next" /></a>
   </div>
   <div class="ban_wrap">
     <ul>
-      <li><a href="https://xn--bp2b020c.com/notice" aria-label="notice"><img src="./assets/img/notice_ban.png"
+      <li><a href="https://xn--bp2b020c.com/notice" aria-label="notice"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/notice_ban.png"
             alt="notice_ban" /></a></li>
-      <li><a href="https://xn--bp2b020c.com/price" aria-label="price"><img src="./assets/img/price_ban.png"
+      <li><a href="https://xn--bp2b020c.com/price" aria-label="price"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/price_ban.png"
             alt="price_ban" /></a></li>
-      <li><a href="https://xn--bp2b020c.com/lineup" aria-label="lineup"><img src="./assets/img/lineup_ban.png"
+      <li><a href="https://xn--bp2b020c.com/lineup" aria-label="lineup"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/lineup_ban.png"
             alt="lineup_ban" /></a></li>
-      <li><a href="https://open.kakao.com/o/sN7iLcbf" aria-label="kakao"><img src="./assets/img/kakao_ban.png"
+      <li><a href="https://open.kakao.com/o/sN7iLcbf" aria-label="kakao"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/kakao_ban.png"
             alt="kakao_ban" /></a></li>
   </div>
   <div class="qna_wrap">
-    <img src="./assets/img/qna_icon.png" alt="qna_icon" />
+    <img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/qna_icon.png" alt="qna_icon" />
     <h2>롤대리 & 듀오</h2>
     <div class="qna_box">
       <h3>Q. 롤팡은 어떤 팀인가요 ?</h3>
       <p>
         A. 롤팡은 오버워치 및 롤대리 업체 스덤팀에서부터 시작되어 6년째 수만 건의 작업 내역을 보유하고 있는<br />
         안전하고 만족도 높은 장수 업체입니다.<br />
-        주간 야간 근무로 전문 상담사가 대기하고 있어 24시간 문의도<br />
-        가능하니 부담 없이 문의해주시면 감사하겠습니다.<br />
+        주간 야간 근무로 전문 상담사가 대기하고 있어 24시간 문의도 가능하니 부담 없이 문의해주시면 감사하겠습니다.<br />
       </p>
     </div>
     <div class="qna_box">
@@ -184,7 +199,7 @@
       <p>A. 저희 롤팡은 챌린저 900점 출신인 팀장이 직접 인게임에서 친추걸고 영입해온<br />
         롤대리&듀오 전문 기사들로 구성되어 있고, 과거에는 데뷔 전 2~3부 프로팀들과도<br />
         비밀유지 계약을 맺고 프로팀 운영 자금을 지원했을 정도로 역사가 깊고 신뢰할 수 있는<br />
-        롤대리&듀오 1위 업체임을 자부하고 있습니다. 믿고 맡기셔도 좋습니다!</p>
+        롤대리&듀오 1위 업체임을 자부하고 있습니다. 믿고 맡기셔도 좋습니다 !</p>
     </div>
     <div class="qna_box">
       <h3>Q. 칼바람, 일반 게임 사용자 설정 게임, 자유 랭크도 롤대리 및 듀오 신청할 수 있나요 ?</h3>
@@ -192,53 +207,54 @@
     </div>
     <div class="qna_box">
       <h3>Q. 롤대리 작업 진행 중 중단하였다가 재시작할 수 있나요 ?</h3>
-      <p>A. 가능합니다. 언제든 말씀해주시면 중단하였다가 재시작할 수 있으니 편하게 말씀해주세요!</p>
+      <p>A. 가능합니다. 언제든 말씀해주시면 중단하였다가 재시작할 수 있으니 편하게 말씀해주세요 !</p>
     </div>
     <div class="qna_box">
       <h3>Q. 롤듀오를 결제하고 그날 진행을 다 못하게되면 남은 판 수는 사라지나요 ?</h3>
-      <p>A. 아닙니다. 신청하신 롤듀오 판 수는 적립되어 있어서 나중에 언제든 오셔서 말씀해주시면 진행가능합니다!</p>
+      <p>A. 아닙니다. 신청하신 롤듀오 판 수는 적립되어 있어서 나중에 언제든 오셔서 말씀해주시면 진행가능합니다 !</p>
     </div>
   </div>
 
   <script>
-    var slideIndex = 1;
-    showSlide(slideIndex);
+var slideIndex = 1;
+showSlide(slideIndex);
 
-    function nextSlide() {
-      showSlide(slideIndex += 1);
-    }
+function nextSlide() {
+  showSlide(slideIndex += 1);
+}
 
-    function prevSlide() {
-      showSlide(slideIndex -= 1);
-    }
+function prevSlide() {
+  showSlide(slideIndex -= 1);
+}
 
-    function showSlide(n) {
-      var slides = document.getElementsByClassName("slide");
-      var prevBtn = document.querySelector(".prev");
-      var nextBtn = document.querySelector(".next");
+function showSlide(n) {
+  var slides = document.getElementsByClassName("slide");
+  var prevBtn = document.querySelector(".prev");
+  var nextBtn = document.querySelector(".next");
 
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-      for (var i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("active");
-      }
-      slides[slideIndex - 1].classList.add("active");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+  slides[slideIndex-1].classList.add("active");
 
-      // 슬라이드 1번에서는 다음 버튼만 보이게 함
-      if (slideIndex === 1) {
-        prevBtn.style.display = "none";
-        nextBtn.style.display = "block";
-      }
-      // 슬라이드 2번에서는 이전 버튼만 보이게 함
-      else if (slideIndex === 2) {
-        prevBtn.style.display = "block";
-        nextBtn.style.display = "none";
-      }
-    }
+  // 슬라이드 1번에서는 다음 버튼만 보이게 함
+  if (slideIndex === 1) {
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "block";
+  }
+  // 슬라이드 2번에서는 이전 버튼만 보이게 함
+  else if (slideIndex === 2) {
+    prevBtn.style.display = "block";
+    nextBtn.style.display = "none";
+  }
+}
+
   </script>
 </body>
 

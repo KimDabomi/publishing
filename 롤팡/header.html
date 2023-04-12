@@ -6,19 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
-    <style>
+       <style>
         * {
             margin: 0;
             padding: 0;
         }
-
+				 body {
+					 font-family: 'JejuGothic';
+				 }
 
         .header_wrap {
-            width: 90%;
+            width: 100%;
             margin: auto;
             padding: 70px;
             position: relative;
-            background-color: gray;
 
         }
 
@@ -62,8 +63,9 @@
 
         .header_wrap .right_menu ul li a {
             text-decoration: none;
-            color: black;
+            color: #434242;
             font-size: 22px;
+					  font-weight: bold;
         }
         .header_wrap .right_menu ul li a:hover {
             color: #a18ed7;
@@ -89,6 +91,7 @@
             border-radius: 20px;
             padding: 0;
             padding-bottom: 40px;
+					  z-index: 99999;
         }
         .header_wrap .right_menu .menu .menu-list li {
             padding: 0;
@@ -109,7 +112,36 @@
         .header_wrap .right_menu .menu .menu-list.show {
             display: block;
         }
+				@media screen and (max-width:600px) {
+					.page-hero {
+						height: 90px;
+					}
+					.header_wrap {
+						padding: 0;
+					}
+					.header_wrap .left_logo {
+						left: 5%;
+					}
+					.header_wrap .left_logo .logo_img {
+						width: 50%;
+						margin: 10px 0 -10px 10px;
+					}
 
+					.header_wrap .left_logo .kakao_img {
+							width: 100%;
+							margin: 0;
+					}
+					.header_wrap .right_menu ul li {
+						margin-top: 30px;
+						margin-right: 20px;
+					}
+					.header_wrap .right_menu ul li a {
+						font-size: 14px;
+					}
+					.header_wrap .right_menu .menu .menu-list li a {
+            font-size: 14px;
+					}
+				}
     </style>
 </head>
 
@@ -117,7 +149,7 @@
     <header class="header_wrap">
         <div class="left_logo">
             <a href="https://xn--bp2b020c.com"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/logo.png" alt="logo" class="logo_img" /></a>
-            <a href="https://open.kakao.com/o/sKKvLcbf" aria-lable="top_kakao"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/top_kakao_ban.png"
+            <a href="https://open.kakao.com/o/sKKvLcbf" aria-lable="top_kakao" target="_blank"><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/top_kakao_ban.png"
                     alt="top_kakao_ban" class="kakao_img" /></a>
         </div>
         <div class="right_menu">
@@ -151,4 +183,4 @@
     </header>
 </body>
 
-</html>
+</html>s
