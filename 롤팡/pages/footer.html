@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            width: 100%;
+            height: 200px;
+            margin: auto;
+            position: relative;
+            color: #d4cdcd;
+            background-color: #2a2a2a;
+            display: flex;
+            border-top: 2px solid #d4cdcd;
+        }
+
+        .footer .flex_box {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-bottom: 50px;
+        }
+
+        .footer .left_logo {
+            position: absolute;
+            left: 2%;
+            top: 2%;
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        .footer .left_logo .logo_img {
+            width: 30%;
+            margin: 20px 0 -20px 50px;
+        }
+
+        .footer .li_box {
+            width: 18%;
+            top: 8%;
+            margin-bottom: 30px;
+        }
+
+        .footer .li_box h4 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .footer .li_box ul {
+            margin: 0;
+        }
+
+        .footer .li_box ul li {
+            list-style: none;
+        }
+
+        .footer .li_box ul li a {
+            text-decoration: none;
+            color: #d4cdcd;
+            font-size: 16px;
+        }
+
+        .footer .service {
+            position: absolute;
+            left: 20%;
+        }
+
+        .footer .operation {
+            position: absolute;
+            left: 38%;
+        }
+
+        .footer .cs_center {
+            position: absolute;
+            left: 56%;
+        }
+
+        .footer .contact {
+            position: absolute;
+            left: 76%;
+        }
+
+        .footer .copyright_box {
+            position: absolute;
+            left: 20%;
+            bottom: 0;
+        }
+
+        .footer .copyright_box span {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .footer .copyright_box .copyright {
+            font-weight: normal;
+            margin: 0;
+        }
+
+        @media screen and (max-width:600px) {
+            .footer .left_logo {
+                display: none;
+            }
+
+            .footer .li_box {
+                width: 18%;
+                top: 8%;
+                margin-bottom: 30px;
+            }
+
+            .footer .li_box h4 {
+                font-size: 16px;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .footer .li_box ul li {
+                font-size: 10px;
+            }
+
+            .footer .li_box ul li a {
+                text-decoration: none;
+                color: #d4cdcd;
+                font-size: 12px;
+            }
+
+            .footer .service {
+                position: absolute;
+                left: 8%;
+            }
+
+            .footer .operation {
+                position: absolute;
+                left: 30%;
+            }
+
+            .footer .cs_center {
+                position: absolute;
+                left: 50%;
+            }
+
+            .footer .contact {
+                position: absolute;
+                left: 72%;
+            }
+
+            .footer .contact ul li {
+                font-size: 6px;
+            }
+
+            .footer .copyright_box {
+                left: 8%;
+            }
+
+            .footer .copyright_box span {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="flex_box">
+            <div class="left_logo">
+                               <img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/logo.png" alt="logo"
+                    class="logo_img" />
+            </div>
+            <div class="service li_box">
+                <h4>SERVICE</h4>
+                <ul>
+                    <li><a href="https://xn--bp2b020c.com/price">롤대리 랭크</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price">롤듀오 랭크</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_position">배치 고사</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_one">1:1 특강</a></li>
+                </ul>
+            </div>
+            <div class="operation li_box">
+                <h4>WORK</h4>
+                <ul>
+                    <li><a href="https://xn--bp2b020c.com/lineup">기사라인업</a></li>
+                    <li><a href="https://xn--bp2b020c.com/review">작업후기</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_loltft">롤토체스</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_nur">육성 패키지</a></li>
+                </ul>
+            </div>
+            <div class="cs_center li_box">
+                <h4>SERVICE CENTER</h4>
+                <ul>
+                    <li><a href="https://xn--bp2b020c.com/notice">공지사항</a></li>
+                    <li><a href="https://xn--bp2b020c.com">롤대리</a></li>
+                    <li><a href="https://xn--bp2b020c.com/price_rankexpre">랭크체험</a></li>
+                </ul>
+            </div>
+            <div class="contact li_box">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li>항상 고객님의 계정을 제 계정처럼<br />
+                        소중하게 여기겠습니다.</li>
+                    <li>카카오톡_lolpang</li>
+                    <li>상담전화_010 7940 7561</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright_box">
+            <span>롤팡</span><span class="copyright">Copyright &copy; 2023 롤팡 All rights reserved</span>
+        </div>
+    </footer>
+</body>
+
+</html>

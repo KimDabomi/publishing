@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<!-- <head>
+    <link rel="stylesheet" href="./assets/css/price_style.css" />
+</head> -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url('https://xn--bp2b020c.com/wp-content/uploads/2023/04/price_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        font-family: 'JejuGothic';
+    }
+
+    .price_top_ban_wrap {
+        width: 100%;
+        margin: 80px auto;
+        border-radius: 20px;
+        padding: 10px auto;
+    }
+
+    .price_top_ban_wrap ul li {
+        margin-right: 9px;
+        display: inline;
+        list-style: none;
+    }
+
+    .price_top_ban_wrap ul li img {
+        width: 15.5%;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    .price_top_ban_wrap ul li:last-child {
+        margin-right: 0;
+    }
+
+    .class_notice {
+        width: 80%;
+        margin: 80px auto;
+        padding: 30px 0;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .class_notice .yellow {
+        color: #fff288;
+    }
+
+    .class_notice .green {
+        color: #b1dd8e;
+    }
+
+    .class_notice .blue {
+        color: #6ba1ff;
+    }
+
+    .class_notice .red {
+        color: red;
+    }
+
+    .class_notice .gray {
+        color: gray;
+    }
+
+    .class_notice h4 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #434242;
+    }
+
+    .class_notice .steps {
+        width: 80%;
+        margin: 30px auto;
+        padding: 20px 0;
+        border-radius: 10px;
+        background-color: #a18ed7;
+        font-size: 23px;
+        color: white;
+    }
+
+    .class_notice ul {
+        width: 80%;
+        margin: auto;
+        text-align: left;
+    }
+
+    .class_notice ul li {
+        font-size: 18px;
+        margin-left: 10px;
+        line-height: 1.75em;
+    }
+
+    .price_table {
+        width: 85%;
+        margin: 80px auto;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    .price_table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .price_table table thead tr th {
+        width: 40%;
+        padding: 40px;
+        border-bottom: 2px solid #c2bdd0;
+        border-right: 2px solid #c2bdd0;
+        font-size: 28px;
+        font-weight: bold;
+        color: #434242;
+    }
+
+    .price_table table thead tr th:first-child {
+        width: 20%;
+    }
+
+    .price_table table thead tr th:last-child {
+        border-right: 0;
+    }
+
+    .price_table table tbody {
+        border-collapse: collapse;
+    }
+
+    .price_table table tbody tr {
+        border-bottom: 2px solid #c2bdd0;
+    }
+
+    .price_table table tbody tr:last-child {
+        border-bottom: 0;
+    }
+
+    .price_table table tbody tr th img {
+        margin: 30px auto;
+    }
+
+    .price_table table tbody tr td {
+        border-left: 2px solid #c2bdd0;
+        padding: 40px auto;
+    }
+
+    .price_table table tbody tr td .purple {
+        display: inline-block;
+        background-color: #a18ed7;
+        color: white;
+        font-size: 22px;
+        padding: 10px 20px;
+        margin-left: 20px;
+        letter-spacing: 2px;
+    }
+
+    .price_table table tbody tr td ul {
+        padding-top: 20px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .price_table table tbody tr td ul li {
+        font-size: 17px;
+        list-style: none;
+        line-height: 2em;
+    }
+
+    .price_table table tbody tr td ul li .white {
+        color: white;
+    }
+
+    .price_table table tbody tr:last-child {
+        border-bottom: 0;
+    }
+
+    @media screen and (max-width:600px) {
+        .price_top_ban_wrap {
+            padding: 0;
+            margin: 40px 0 0 0;
+        }
+
+        .price_top_ban_wrap ul {
+            margin: 0 auto;
+        }
+
+        .price_top_ban_wrap ul li {
+            margin-right: 2px;
+        }
+
+        .price_top_ban_wrap ul li img {
+            width: 15.1%;
+        }
+
+        .class_notice {
+            margin: 0;
+            margin: 40px auto;
+        }
+
+        .class_notice h4 {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .class_notice .steps {
+            font-size: 16px;
+            margin: 15px auto;
+        }
+
+        .class_notice ul li {
+            font-size: 13px;
+        }
+
+        .price_table table thead tr th {
+            font-size: 22px;
+        }
+
+        .price_table table tbody tr td ul li {
+            font-size: 14px;
+        }
+
+        .price_table table tbody tr td .purple {
+            padding: 5px;
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+
+    @media screen and (max-width:400px) {
+        .class_notice h4 {
+            font-size: 16px;
+        }
+
+        .class_notice .steps {
+            font-size: 10px;
+        }
+
+        .class_notice ul li {
+            font-size: 10px;
+        }
+
+        .price_table table thead tr th {
+            font-size: 13px;
+            padding: 20px;
+        }
+
+        .price_table table tbody tr td ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .price_table table tbody tr td ul li {
+            font-size: 5px;
+            margin: 5px 0;
+        }
+
+        .price_table table tbody tr th img {
+            height: 50%;
+        }
+
+        .price_table table tbody tr td .purple {
+            padding: 3px;
+            font-size: 10px;
+            margin: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="price_top_ban_wrap">
+        <ul>
+            <li><a href="https://xn--bp2b020c.com/price" aria-label="price"><img
+                        src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/price_ban_01.png" alt="승당&듀오강의"></a>
+            </li>
+            <li><a href="https://xn--bp2b020c.com/price_position" aria-label="price_position"><img
+                        src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/price_ban_02.png" alt="배치고사"></a></li>
+            <li><a href="https://xn--bp2b020c.com/price_one" aria-label="price_one"><img
+                        src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/price_ban_03.png" alt="1:1특강"></a></li>
+            <li><a href="https://xn--bp2b020c.com/price_loltft" aria-label="price_loltft"><img
+                        src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/price_ban_04.png" alt="롤토체스"></a></li>
+            <li><a href="https://xn--bp2b020c.com/price_rankexpre" aria-label="price_rankexpre"><img
+                        src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/price_ban_05.png" alt="랭겜체험"></a></li>
+            <li><a href="https://xn--bp2b020c.com/price_nur" aria-label="price_nur"><img
+                        src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/price_ban_06.png" alt="육성"></a></li>
+        </ul>
+    </div>
+    <div class="class_notice">
+        <h4>승당, 듀오 강의 진행 과정</h4>
+        <div class="steps">
+            <span class="yellow">카톡 상담/접수</span> - 입금 - 기사배정 - 작업진행 - <span class="green">완료</span>
+        </div>
+        <ul>
+            <li>원하시는 티어까지 <span class="blue">책임</span>지고 함께합니다.</li>
+            <li><span class="red">강등위기, 승급전 패배</span> mmr에 따라 추가비용이 발생할 수 있습니다.</li>
+            <li>승당강의는 15승 진행시 +1승 서비스를 제공합니다.<br />
+                듀오강의는 10판 진행시 +1판 서비스를 제공합니다.</li>
+            <li>정해진 승리 수를 승/패로 계산하여 <span class="red">1패</span> 시 <span class="blue">2승</span>을 보상해드립니다. <span
+                    class="gray"><br />
+                    Ex) 6승 2패 = 4승</span></li>
+            <li>신청 즉시 기사님 배정 후 작업을 시작합니다.</li>
+        </ul>
+    </div>
+
+    <div class="price_table">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>승당 강의</th>
+                    <th>듀오 강의</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/unrank_icon.png"
+                            alt="unrank_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>언랭_₩ 10,000</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>언랭_₩ 8,000</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/silver_icon.png"
+                            alt="silver_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>아이언_₩ 5,000</li>
+                            <li>브론즈_₩ 5,000</li>
+                            <li>실버_₩ 5,500</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>아이언_₩ 5,000</li>
+                            <li>브론즈_₩ 5,000</li>
+                            <li>실버_₩ 5,500</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/gold_icon.png" alt="gold_icon" />
+                    </th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>골드_₩ 6,000</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>골드_₩ 6,500</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/pla_icon.png" alt="pla_icon" />
+                    </th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>플레티넘 2~4_₩ 9,000</li>
+                            <li>플레티넘 1_₩ 10,000</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>플레티넘 2~4_₩ 9,000</li>
+                            <li>플레티넘 1_₩ 10,000</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/dia_icon.png" alt="dia_icon" />
+                    </th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>다이아 4_₩ 13,000</li>
+                            <li>다이아 3_₩ 16,000</li>
+                            <li>다이아 2_₩ 20,000</li>
+                            <li>다이아 1_₩ 25,000</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <div class="purple">1판 당</div>
+                        <ul>
+                            <li>다이아 4_₩ 13,000</li>
+                            <li>다이아 3_₩ 14,000</li>
+                            <li>다이아 2_₩ 16,000</li>
+                            <li>다이아 1_₩ 20,000</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img src="https://xn--bp2b020c.com/wp-content/uploads/2023/04/master_icon.png"
+                            alt="master_icon" /></th>
+                    <td>
+                        <div class="purple">1승 당</div>
+                        <ul>
+                            <li>0~50점<span class="white">00</span>_₩ 60,000</li>
+                            <li>50~100점<span class="white">0</span>_₩ 75,000</li>
+                            <li>100~150점_₩ 90,000</li>
+                            <li>150~200점_₩ 110,000</li>
+                            <li>200~250점_₩ 130,000</li>
+                            <li>250~300점_₩ 150,000</li>
+                            <li>300~400점_₩ 180,000</li>
+                            <li>400~500점_₩ 210,000</li>
+                            <li>500~600점_₩ 240,000</li>
+                            <li>600~700점_₩ 280,000</li>
+                            <li>700~800점_₩ 330,000</li>
+                            <li>800~900점_₩ 390,000</li>
+                            <li>900점~<span class="white">000</span>_₩ 420,000</li>
+
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>마스터, 그랜드마스터, 챌린저 구간은 별도 문의</li>
+                            <li>자유 랭크 별도 문의</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
