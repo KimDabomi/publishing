@@ -4,114 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/site02.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/site.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" /> -->
+    <title>사이트 제작 상세페이지</title>
     <style>
-        .site_sec01 {
-            background: url(/new/img/bg01.webp) top no-repeat;
-            height: 1000px;
+        .container {
+            padding-bottom: 100px;
         }
 
-        .site_sec01 p,
-        .site_sec02 p,
-        .site_sec03 p {
+        .site_container {
+            margin: auto;
+        }
+
+        .site_container .site_wrap {
+            width: 100%;
+        }
+
+        .site_container .site_wrap p {
+            line-height: 1.2em;
+        }
+
+        .site_container .site_wrap .site_sec01,
+        .site_container .site_wrap .site_sec02,
+        .site_container .site_wrap .site_sec03,
+        .site_container .site_wrap .site_sec04,
+        .site_container .site_wrap .site_sec05,
+        .site_container .site_wrap .site_sec05 img,
+        .site_container .site_wrap .site_sec06,
+        .site_container .site_wrap .site_sec07,
+        .site_container .site_wrap .site_sec08,
+        .site_container .site_wrap .site_sec09,
+        .site_container .site_wrap .site_sec10,
+        .site_container .site_wrap .site_sec10 img {
+            width: 100%;
+            margin: auto;
+        }
+
+        .site_container .site_wrap .site_sec01 {
+            background: url(/new/img/bg01.webp) no-repeat center/contain;
+            height: 1200px;
+        }
+
+        .site_container .site_wrap .site_sec01 p {
             font-size: 55px;
             font-weight: 400;
             margin-top: 100px;
             text-align: center;
+            line-height: 1.2em;
         }
 
-        .site_sec02 {
-            background: url(/new/img/bg02.webp) top no-repeat;
-            height: 1000px;
+        .site_container .site_wrap .site_sec02 {
+            background: url(/new/img/bg02.webp) no-repeat center/contain;
+            height: 600px;
         }
 
-        .site_sec03 {
-            background: url(/new/img/bg03.webp) bottom no-repeat;
+        .site_container .site_wrap .site_sec02 p {
+            font-size: 55px;
+            font-weight: 400;
+            margin-top: 100px;
+            text-align: center;
+            line-height: 1.2em;
+        }
+
+        .site_container .site_wrap .site_sec03 {
+            background: url(/new/img/bg03.webp) no-repeat center/contain;
             height: 1000px;
             padding: 50px 0 0 0;
             border-radius: 30px;
         }
 
-        .site_sec03 p {
+        .site_container .site_wrap .site_sec03 p {
+            font-size: 55px;
+            font-weight: 400;
+            margin-top: 100px;
+            text-align: center;
+            line-height: 1.2em;
             color: white;
         }
 
-        .site_sec04 {
+        .site_container .site_wrap .site_sec04 {
             margin-top: 200px;
         }
 
-        .site_sec04 p {
+        .site_container .site_wrap .site_sec04 p {
             font-size: 55px;
             font-weight: bold;
             margin-top: 5px;
             text-align: center;
         }
 
-        .site_sec04 .sec04_img,
-        .site_sec04 .sec04_img02 {
+        .site_container .site_wrap .site_sec04 .sec04_img {
             display: flex;
             width: 95%;
             margin: 80px auto 0;
-        }
-
-        .site_sec04 .sec04_img {
             justify-content: space-around;
         }
 
-        .site_sec04 .sec04_img02 {
+        .site_container .site_wrap .site_sec04 .sec04_img02 {
+            display: flex;
+            width: 95%;
             margin: 30px auto;
             justify-content: space-evenly;
         }
 
-        .site_sec04 .sec04_img_box {
+        .site_container .site_wrap .site_sec04 .sec04_img_box {
             border: 3px solid #3662FD;
-            box-shadow: 0 10px 10px #3661fd41;
+            box-shadow: 0 10px 10px rgba(54, 97, 253, 0.2549019608);
             border-radius: 30px;
             width: 30%;
             padding: 50px 20px;
         }
 
-        .site_sec04 .sec04_img_box p {
+        .site_container .site_wrap .site_sec04 .sec04_img_box p {
             font-size: 34px;
             margin-bottom: 40px;
         }
 
-        .site_sec05 {
+        .site_container .site_wrap .site_sec05 {
             margin: 200px auto 120px;
         }
 
-        .site_sec06,
-        .site_sec07,
-        .site_sec08,
-        .site_sec09 {
+        .site_container .site_wrap .site_sec06,
+        .site_container .site_wrap .site_sec07,
+        .site_container .site_wrap .site_sec08,
+        .site_container .site_wrap .site_sec09 {
             padding-bottom: 70px;
             border-radius: 50px;
             margin-bottom: 100px;
         }
 
-        .site_sec06 {
+        .site_container .site_wrap .site_sec06 {
             background: url(/new/img/bg04.webp) top no-repeat;
+            padding-bottom: 180px;
         }
 
-        .site_sec07,
-        .site_sec09 {
+        .site_container .site_wrap .site_sec06 img:last-child {
+            margin: 80px 13.5% 0;
+        }
+
+        .site_container .site_wrap .site_sec07 img:nth-of-type(2),
+        .site_container .site_wrap .site_sec07 img:nth-of-type(3) {
+            width: 90%;
+            margin: 50px 6% 0;
+        }
+
+        .site_container .site_wrap .site_sec08 img:nth-of-type(2),
+        .site_container .site_wrap .site_sec08 img:nth-of-type(3),
+        .site_container .site_wrap .site_sec08 img:nth-of-type(4) {
+            width: 90%;
+            margin: 50px 6% 0;
+        }
+
+        .site_container .site_wrap .site_sec07,
+        .site_container .site_wrap .site_sec09 {
             background-color: black;
         }
 
-        .site_sec09 {
+        .site_container .site_wrap .site_sec09 {
             padding-top: 100px;
         }
 
-        .site_num_icon {
+        .site_container .site_wrap .site_num_icon {
             width: 50px;
             margin: 200px 50% 70px;
             transform: translate(-50%);
         }
 
-        .site_sec_title {
+        .site_container .site_wrap .site_sec_title {
             font-size: 55px;
             font-weight: 400;
             color: white;
@@ -121,76 +181,74 @@
             margin-bottom: 30px;
         }
 
-        .site_sec_content {
+        .site_container .site_wrap .site_sec_content {
             text-align: center;
             line-height: 1.5em;
+            font-size: 30px;
         }
 
-        #speed_img,
-        #sec07_img01,
-        #sec07_img02,
-        #sec08_worst,
-        #sec08_best,
-        #sec08_img {
-            width: 90%;
-            display: block;
-            margin: 80px auto 20px;
-        }
-
-        .event_box {
+        .site_container .site_wrap .site_sec09 .event_box {
             background-color: white;
             width: 95%;
             margin: 40px auto;
             padding: 80px 0;
         }
 
-        .event_wrap {
+        .site_container .site_wrap .site_sec09 .event_box .event_price {
+            margin-top: 50px;
+        }
+
+        .site_container .site_wrap .site_sec09 .event_wrap {
             width: 90%;
             margin: auto;
             text-align: center;
         }
 
-        .event_wrap img {
+        .site_container .site_wrap .site_sec09 .event_wrap img {
             width: 100%;
         }
 
-        .event_title {
+        .site_container .site_wrap .site_sec09 .event_title {
             font-size: 35px;
             color: #3662FD;
             font-weight: bold;
         }
 
-        .event_content {
+        .site_container .site_wrap .site_sec09 .event_content {
             font-size: 50px;
             margin: 20px 0 50px;
         }
 
-        #sec09_price01,
-        #sec09_price02 {
-            margin-top: 50px;
-        }
-
-        .event_content_box {
+        .site_container .site_wrap .site_sec09 .event_content_box {
             display: flex;
         }
 
-        .event_content_box img {
+        .site_container .site_wrap .site_sec09 .event_content_box img {
             width: 50%;
         }
 
-        .event_content_box ul {
+        .site_container .site_wrap .site_sec09 .event_content_box ul {
             width: 48%;
             margin-left: 2%;
         }
 
-        .event_content_box ul li {
+        .site_container .site_wrap .site_sec09 .event_content_box ul li {
             list-style: none;
             line-height: 2em;
             font-size: 30px;
         }
 
-        .step_box {
-            box-shadow: 0 5px 10px #3661fd73;
+        .site_container .site_wrap .site_sec09 .event_content_box ul li:last-child {
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .site_container .site_wrap .site_sec10 .step_box {
+            box-shadow: 0 5px 10px rgba(54, 97, 253, 0.4509803922);
             width: 70%;
             margin: 20px auto;
             border-radius: 30px;
@@ -198,7 +256,22 @@
             padding: 20px 30px;
         }
 
-        .step_num {
+        .site_container .site_wrap .site_sec10 .step_box p {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .site_container .site_wrap .site_sec10 .step_box p span {
+            color: #3662FD;
+        }
+
+        .site_container .site_wrap .site_sec10 .step_box .add_msg {
+            font-size: 30px;
+            color: gray;
+            font-weight: normal;
+        }
+
+        .site_container .site_wrap .site_sec10 .step_num {
             border-radius: 30px;
             background-color: #3662FD;
             color: white;
@@ -209,225 +282,387 @@
             margin: 12px 30px 0 0;
         }
 
-        .step_box p {
-            font-size: 36px;
-            font-weight: bold;
+        @media screen and (max-width: 767px) {
+
+            .site_container .site_wrap .site_sec01 p,
+            .site_container .site_wrap .site_sec02 p,
+            .site_container .site_wrap .site_sec03 p {
+                font-size: 40px;
+            }
+
+            .site_container .site_wrap .site_sec01 {
+                height: 800px;
+            }
+
+            .site_container .site_wrap .site_sec02 {
+                height: 400px;
+            }
+
+            .site_container .site_wrap .site_sec03 {
+                height: 700px;
+            }
+
+            .site_container .site_wrap .site_sec04 p {
+                font-size: 30px;
+            }
+
+            .site_container .site_wrap .site_sec04 .sec04_img_box p {
+                font-size: 15px;
+            }
+
+            .site_container .site_wrap .site_sec06 img:last-child {
+                width: 90%;
+                margin: 30px 5% 0;
+            }
+
+            .site_container .site_wrap .site_sec_title {
+                font-size: 30px;
+            }
+
+            .site_container .site_wrap .site_sec_content {
+                font-size: 18px;
+            }
+
+            .site_container .site_wrap .site_sec09 .event_content {
+                font-size: 30px;
+            }
+
+            .site_container .site_wrap .site_sec09 .event_content_box ul li {
+                font-size: 18px;
+                line-height: 1.5em;
+            }
+
+            .site_container .site_wrap .site_sec09 .event_content_box ul li:last-child {
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            .site_container .site_wrap .site_sec10 .step_box p {
+                font-size: 16px;
+            }
+
+            .site_container .site_wrap .site_sec10 .step_box .add_msg {
+                font-size: 12px;
+            }
+
+            .site_container .site_wrap .site_sec10 .step_num {
+                margin-top: 2px;
+            }
         }
 
-        .step_box p span {
-            color: #3662FD;
+        @media screen and (max-width: 540px) {
+
+            .site_container .site_wrap .site_sec01 p,
+            .site_container .site_wrap .site_sec02 p,
+            .site_container .site_wrap .site_sec03 p {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+
+            .site_container .site_wrap .site_sec01 {
+                height: 600px;
+            }
+
+            .site_container .site_wrap .site_sec02 {
+                height: 300px;
+            }
+
+            .site_container .site_wrap .site_sec03 {
+                height: 500px;
+                padding-top: 100px;
+            }
+
+            .site_container .site_wrap .site_sec04 {
+                margin-top: 20px;
+            }
+
+            .site_container .site_wrap .site_sec04 p {
+                font-size: 25px;
+            }
+
+            .site_container .site_wrap .site_sec04 .sec04_img_box {
+                padding: 10px 5px;
+            }
+
+            .site_container .site_wrap .site_sec04 .sec04_img_box p {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .site_container .site_wrap .site_sec05 {
+                margin-bottom: 30px;
+            }
+
+            .site_container .site_wrap .site_sec06,
+            .site_container .site_wrap .site_sec07,
+            .site_container .site_wrap .site_sec08,
+            .site_container .site_wrap .site_sec09 {
+                margin-bottom: 50px;
+                padding-bottom: 30px;
+            }
+
+            .site_container .site_wrap .site_num_icon {
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+
+            .site_container .site_wrap .site_sec_title {
+                font-size: 20px;
+            }
+
+            .site_container .site_wrap .site_sec_content {
+                font-size: 12px;
+            }
+
+            .site_container .site_wrap .site_sec09 .due_date {
+                font-size: 10px;
+            }
+
+            .site_container .site_wrap .site_sec09 .event_title .event_title {
+                font-size: 15px;
+            }
+
+            .site_container .site_wrap .site_sec09 .special_price {
+                font-size: 30px;
+            }
+
+            .site_container .site_wrap .site_sec09 .event_content {
+                font-size: 20px;
+            }
+
+            .site_container .site_wrap .site_sec09 .event_content_box ul li {
+                font-size: 12px;
+                line-height: 1.5em;
+            }
+
+            .site_container .site_wrap .site_sec09 .event_content_box ul li:last-child {
+                padding: 10px;
+                font-size: 15px;
+            }
+
+            .site_container .site_wrap .site_sec10 .step_num {
+                font-size: 10px;
+                padding: 0 10px;
+                margin: 0 20px 0 0;
+            }
+
+            .site_container .site_wrap .site_sec10 .step_box {
+                padding: 10px;
+            }
+
+            .site_container .site_wrap .site_sec10 .step_box p {
+                font-size: 12px;
+            }
+
+            .site_container .site_wrap .site_sec10 .step_box .add_msg {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="content guide-line">
-        <div class="detail">
-            <div class="section service">
-                <div class="site_sec01">
-                    <p>
-                        남들 하는 대로<br />
-                        홈페이지 만들어서<br />
-                        <b>
-                            상위 노출<br />
-                            <span style="color:red;">절대 불가능</span>합니다
-                        </b>
-                    </p>
-                </div>
-                <div class="site_sec02">
-                    <p>
-                        거금 들여 만든 '홈페이지'<br />
-                        <b>
-                            <span style="color:red;">아무도 모르는 채로</span><br />
-                            두실 건가요?
-                        </b>
-                    </p>
-                </div>
-                <div class="site_sec03">
-                    <p>
-                        SEO 최적화 된 홈페이지로<br />
-                        <b>
-                            1 페이지 <span style="color:rgb(47, 255, 0);">상위노출</span> 하실 분<br />
-                            주목해주세요
-                        </b>
-                    </p>
-                </div>
-                <div class="site_sec04">
-                    <p style="color:#3662FD; font-size:18px; font-weight: bold; ">
-                        SEARCH ENGINE OPTIMIZATION
-                    </p>
-                    <p>
-                        1위 선점을 위한 <span style="color:#3662FD;">SEO 최적화<br />
-                            최고급 엔진</span>을 달아드립니다
-                    </p>
-                    <div class="sec04_img">
-                        <div class="sec04_img_box">
-                            <p>홈페이지 제작</p>
-                            <img src="/new/img/sec02_icon01.webp" alt="icon01" />
-                        </div>
-                        <div class="sec04_img_box">
-                            <p>리치 검색 결과</p>
-                            <img src="/new/img/sec02_icon02.webp" alt="icon02" />
-                        </div>
-                        <div class="sec04_img_box">
-                            <p>속도 최적화</p>
-                            <img src="/new/img/sec02_icon03.webp" alt="icon03" />
-                        </div>
+    <div class="site_container container service">
+        <div class="site_wrap">
+            <div class="site_sec01">
+                <p>
+                    남들 하는 대로<br />
+                    홈페이지 만들어서<br />
+                    <b>
+                        상위 노출<br />
+                        <span style="color:red;">절대 불가능</span>합니다
+                    </b>
+                </p>
+            </div>
+            <div class="site_sec02">
+                <p>
+                    거금 들여 만든 '홈페이지'<br />
+                    <b>
+                        <span style="color:red;">아무도 모르는 채로</span><br />
+                        두실 건가요?
+                    </b>
+                </p>
+            </div>
+            <div class="site_sec03">
+                <p>
+                    SEO 최적화 된 홈페이지로<br />
+                    <b>
+                        1 페이지 <span style="color:rgb(47, 255, 0);">상위노출</span> 하실 분<br />
+                        주목해주세요
+                    </b>
+                </p>
+            </div>
+            <div class="site_sec04">
+                <p style="color:#3662FD; font-size:18px; font-weight: bold; ">
+                    SEARCH ENGINE OPTIMIZATION
+                </p>
+                <p>
+                    1위 선점을 위한 <span style="color:#3662FD; line-height: 1.2em;">SEO 최적화<br />
+                        최고급 엔진</span>을 달아드립니다
+                </p>
+                <div class="sec04_img">
+                    <div class="sec04_img_box">
+                        <p>홈페이지 제작</p>
+                        <img src="/new/img/sec02_icon01.webp" alt="icon01" />
                     </div>
-                    <div class="sec04_img02">
-                        <div class="sec04_img_box">
-                            <p>HTML 최적화</p>
-                            <img src="/new/img/sec02_icon04.webp" alt="icon04" />
-                        </div>
-                        <div class="sec04_img_box">
-                            <p>사이트맵 최신화</p>
-                            <img src="/new/img/sec02_icon05.webp" alt="icon05" />
-                        </div>
+                    <div class="sec04_img_box">
+                        <p>리치 검색 결과</p>
+                        <img src="/new/img/sec02_icon02.webp" alt="icon02" />
+                    </div>
+                    <div class="sec04_img_box">
+                        <p>속도 최적화</p>
+                        <img src="/new/img/sec02_icon03.webp" alt="icon03" />
                     </div>
                 </div>
-                <div class="site_sec05">
-                    <img src="/new/img/SEO_landing_1000_03.gif" alt="SEO3" />
-                    <img src="/new/img/SEO_landing_1000_04.gif" alt="SEO4" />
-                    <img src="/new/img/SEO_landing_1000_05.gif" alt="SEO5" />
-                </div>
-                <div class="site_sec06">
-                    <img class="site_num_icon" src="/new/img/num03.webp" alt="num03" />
-                    <p class="site_sec_title">
-                        빛의 속도보다 빠르게<br />
-                        <span style="color: rgb(47, 255, 0); font-weight: bold;">페이지 속도 최적화</span>
-                    </p>
-                    <p style="color: white; font-size: 30px; margin-top: 30px;" class="site_sec_content">
-                        Page Speed Insight 진단을 통해 사이트 점수 향상에<br />
-                        부족한 부분을 보완하여 로딩 시간을 빠르게 개선합니다.
-                    </p>
-                    <img id="speed_img" src="/new/img/speed_img.webp" alt="speed_img" />
-                </div>
-                <div class="site_sec07">
-                    <img class="site_num_icon" src="/new/img/num04.webp" alt="num04" />
-                    <p class="site_sec_title">
-                        로딩/오류 이슈 해결을 위한<br />
-                        <span style="color: #3662FD; font-weight: bold;">HTML 코드 최적화</span>
-                    </p>
-                    <p style="color: gray; font-size: 30px; margin-top: 30px;" class="site_sec_content">
-                        구글, 네이버 크롤링봇이 원활하게 사이트를 이해할 수 있도록<br />
-                        이슈를 해소하여 로딩/오류로 인한 사용자 이탈을 감소시켜줍니다.
-                    </p>
-                    <img id="sec07_img01" src="/new/img/sec07_img01.webp" alt="sec07_img01" />
-                    <img id="sec07_img02" src="/new/img/sec07_img02.webp" alt="sec07_img02" />
-                </div>
-                <div class="site_sec08">
-                    <img class="site_num_icon" src="/new/img/num05.webp" alt="num05" />
-                    <p class="site_sec_title" style="color: black;">
-                        매일 매일 갱신되는<br />
-                        <span style="color: #3662FD; font-weight: bold;">사이트맵 최신화 업데이트</span>
-                    </p>
-                    <p style="color: gray; font-size: 30px; margin-top: 30px;" class="site_sec_content">
-                        Search Console에 등록하여 구글이 우리 홈페이지를<br />
-                        먼저 인식할 수 있도록 매일 최신 업데이트 된 페이지로 유지합니다.
-                    </p>
-                    <img id="sec08_worst" src="/new/img/sec08_worst.webp" alt="sec08_worst" />
-                    <img id="sec08_best" src="/new/img/sec08_best.webp" alt="sec08_best" />
-                    <img id="sec08_img" src="/new/img/sec08_img.webp" alt="sec08_img" />
-
-                </div>
-                <div class="site_sec09">
-                    <p
-                        style="color:rgb(47, 255, 0); font-weight: bold; font-size: 50px; text-align: center; margin-bottom: 30px;">
-                        OPEN EVENT
-                    </p>
-                    <p class="site_sec_title" style="color:white; font-weight: bold;">
-                        압도적 <span style="color:rgb(47, 255, 0);">1위 선점</span>을 위한<br />
-                        갓성비 <span style="color:black; background-color: rgb(47, 255, 0); padding: 0 15px 5px;">신규 런칭
-                            구성</span>
-                    </p>
-                    <p style="color: white; font-size: 34px; margin-top: 30px;" class="site_sec_content">
-                        지금만 가능한 특별 혜택 놓치지 마세요.
-                    </p>
-                    <p style="color:gray; text-align: center; font-size: 22px; margin-top: 20px;">
-                        &#124; 이벤트기간 : 2023년 7월 1일 ~ 8월 31일까지 &#124;
-                    </p>
-                    <div class="event_box">
-                        <!-- <img src="/new/img/sec09_mega.webp" alt="sec09_mega" id="sec09_mega" /> -->
-                        <div class="event_wrap">
-                            <p class="event_title">EVENT 01.</p>
-                            <p class="event_content">
-                                SEO 최적화 홈페이지 제작 패키지<br />
-                                <b style="font-size: 54px;">런칭 <span style="color:red;">40% 할인 특가</span></b>
-                            </p>
-                            <img src="/new/img/sec09_even01.webp" alt="sec09_even01" />
-                            <img src="/new/img/sec09_price01.webp" alt="sec09_price01" id="sec09_price01" />
-                        </div>
+                <div class="sec04_img02">
+                    <div class="sec04_img_box">
+                        <p>HTML 최적화</p>
+                        <img src="/new/img/sec02_icon04.webp" alt="icon04" />
                     </div>
-                    <div class="event_box">
-                        <div class="event_wrap">
-                            <p class="event_title">EVENT 02.</p>
-                            <p class="event_content">
-                                신규 런칭 추가 혜택<br />
-                                <b>고품질 백링크 <span style="color:red;">무료 작업</span></b>
-                            </p>
-                            <div class="event_content_box">
-                                <img src="/new/img/sec09_even02.webp" alt="sec09_even02" />
-                                <ul>
-                                    <li style="color:red; font-weight: bold;">Google, N사 특정 백링크</li>
-                                    <li><span style="color:red; font-weight: bold;">키워드 순위 10등 이내</span> 노출</li>
-                                    <li>고도화된 색인 작업 (Indexing)</li>
-                                    <li>높은 주제 관련성</li>
-                                    <li>고유 콘텐츠로 개별 작업</li>
-                                    <li style="background-color: red; color:white; border-radius: 30px;
-                                    padding: 20px; font-size: 36px; font-weight: bold;">고품질 백링크 3,500개</li>
-                                </ul>
-                            </div>
-                            <img src="/new/img/sec09_price02.webp" alt="sec09_price02" id="sec09_price02" />
-                        </div>
-                    </div>
-                </div>
-                <div class="site_sec10">
-                    <img src="/new/img/sec10.webp" alt="sec10_img" />
-                    <p
-                        style="color: #3662FD; font-weight: 900; font-size: 24px; text-align: center; margin-top: 100px;">
-                        HOW TO USE
-                    </p>
-                    <p class="site_sec_title" style="color: black;">
-                        초심플하게 완성하는<br />
-                        <span style="color:#3662FD; font-weight: bold;">SEO 최적화 이용방법</span>
-                    </p>
-                    <div class="step_box">
-                        <div class="step_num">STEP 01.</div>
-                        <p>신청</p>
-                    </div>
-                    <div class="step_box">
-                        <div class="step_num">STEP 02.</div>
-                        <div class="step_text">
-                            <p>
-                                <span>상담</span> 및 <span>컨설팅</span>
-                            </p>
-                            <p style="font-size: 30px; color: gray; font-weight: normal;">(컨셉, 기간, 작업범위, 가격 상담)</p>
-                        </div>
-                    </div>
-                    <div class="step_box">
-                        <div class="step_num">STEP 03.</div>
-                        <p>
-                            <span>결제</span> 및 홈페이지 작업 후<br />
-                            완성 된 <span>홈페이지 전달</span>
-                        </p>
-                    </div>
-                    <div class="step_box">
-                        <div class="step_num">STEP 04.</div>
-                        <p>이용 가이드 안내</p>
-                    </div>
-                    <div class="step_box">
-                        <div class="step_num">STEP 05.</div>
-                        <div class="step_text">
-                            <p>
-                                <span>백링크 작업</span> 진행
-                            </p>
-                            <p style="font-size: 30px; color: gray; font-weight: normal;">(약 1개월 소요)</p>
-                        </div>
+                    <div class="sec04_img_box">
+                        <p>사이트맵 최신화</p>
+                        <img src="/new/img/sec02_icon05.webp" alt="icon05" />
                     </div>
                 </div>
             </div>
+            <div class="site_sec05">
+                <img src="/new/img/SEO_landing_1000_03.gif" alt="SEO3" />
+                <img src="/new/img/SEO_landing_1000_04.gif" alt="SEO4" />
+                <img src="/new/img/SEO_landing_1000_05.gif" alt="SEO5" />
+            </div>
+            <div class="site_sec06">
+                <img class="site_num_icon" src="/new/img/num03.webp" alt="num03" />
+                <p class="site_sec_title">
+                    빛의 속도보다 빠르게<br />
+                    <span style="color: rgb(47, 255, 0); font-weight: bold;">페이지 속도 최적화</span>
+                </p>
+                <p style="color: white; margin-top: 30px;" class="site_sec_content">
+                    Page Speed Insight 진단을 통해 사이트 점수 향상에<br />
+                    부족한 부분을 보완하여 로딩 시간을 빠르게 개선합니다.
+                </p>
+                <img id="speed_img" src="/new/img/speed_img.webp" alt="speed_img" />
+            </div>
+            <div class="site_sec07">
+                <img class="site_num_icon" src="/new/img/num04.webp" alt="num04" />
+                <p class="site_sec_title">
+                    로딩/오류 이슈 해결을 위한<br />
+                    <span style="color: #3662FD; font-weight: bold;">HTML 코드 최적화</span>
+                </p>
+                <p style="color: gray; margin-top: 30px;" class="site_sec_content">
+                    구글, 네이버 크롤링봇이 원활하게 사이트를 이해할 수 있도록<br />
+                    이슈를 해소하여 로딩/오류로 인한 사용자 이탈을 감소시켜줍니다.
+                </p>
+                <img id="sec07_img01" src="/new/img/sec07_img01.webp" alt="sec07_img01" />
+                <img id="sec07_img02" src="/new/img/sec07_img02.webp" alt="sec07_img02" />
+            </div>
+            <div class="site_sec08">
+                <img class="site_num_icon" src="/new/img/num05.webp" alt="num05" />
+                <p class="site_sec_title" style="color: black;">
+                    매일 매일 갱신되는<br />
+                    <span style="color: #3662FD; font-weight: bold;">사이트맵 최신화 업데이트</span>
+                </p>
+                <p style="color: gray; margin-top: 30px;" class="site_sec_content">
+                    Search Console에 등록하여 구글이 우리 홈페이지를<br />
+                    먼저 인식할 수 있도록 매일 최신 업데이트 된 페이지로 유지합니다.
+                </p>
+                <img id="sec08_worst" src="/new/img/sec08_worst.webp" alt="sec08_worst" />
+                <img id="sec08_best" src="/new/img/sec08_best.webp" alt="sec08_best" />
+                <img id="sec08_img" src="/new/img/sec08_img.webp" alt="sec08_img" />
 
-
+            </div>
+            <div class="site_sec09">
+                <p style="color:rgb(47, 255, 0); font-weight: bold; text-align: center; margin-bottom: 30px;"
+                    class="event_title">
+                    OPEN EVENT
+                </p>
+                <p class="site_sec_title" style="color:white; font-weight: bold;">
+                    압도적 <span style="color:rgb(47, 255, 0);">1위 선점</span>을 위한<br />
+                    갓성비 <span style="color:black; background-color: rgb(47, 255, 0); padding: 0 15px 5px;">신규 런칭
+                        구성</span>
+                </p>
+                <p style="color: white; margin-top: 30px;" class="site_sec_content">
+                    지금만 가능한 특별 혜택 놓치지 마세요.
+                </p>
+                <p class="due_date" style="color:gray; text-align: center; margin-top: 20px;">
+                    &#124; 이벤트기간 : 2023년 7월 1일 ~ 8월 31일까지 &#124;
+                </p>
+                <div class="event_box">
+                    <!-- <img src="/new/img/sec09_mega.webp" alt="sec09_mega" id="sec09_mega" /> -->
+                    <div class="event_wrap">
+                        <p class="event_title">EVENT 01.</p>
+                        <p class="event_content">
+                            SEO 최적화 홈페이지 제작 패키지<br />
+                            <b class="special_price">런칭 <span style="color:red;">40% 할인 특가</span></b>
+                        </p>
+                        <img src="/new/img/sec09_even01.webp" alt="sec09_even01" />
+                        <img src="/new/img/sec09_price01.webp" alt="sec09_price01" class="event_price" />
+                    </div>
+                </div>
+                <div class="event_box">
+                    <div class="event_wrap">
+                        <p class="event_title">EVENT 02.</p>
+                        <p class="event_content">
+                            신규 런칭 추가 혜택<br />
+                            <b>고품질 백링크 <span style="color:red;">무료 작업</span></b>
+                        </p>
+                        <div class="event_content_box">
+                            <img src="/new/img/sec09_even02.webp" alt="sec09_even02" />
+                            <ul>
+                                <li style="color:red; font-weight: bold;">Google, N사 특정 백링크</li>
+                                <li><span style="color:red; font-weight: bold;">키워드 순위 10등 이내</span> 노출</li>
+                                <li>고도화된 색인 작업 (Indexing)</li>
+                                <li>높은 주제 관련성</li>
+                                <li>고유 콘텐츠로 개별 작업</li>
+                                <li>고품질 백링크 3,500개</li>
+                            </ul>
+                        </div>
+                        <img src="/new/img/sec09_price02.webp" alt="sec09_price02" class="event_price" />
+                    </div>
+                </div>
+            </div>
+            <div class="site_sec10">
+                <img src="/new/img/sec10.webp" alt="sec10_img" />
+                <p style="color: #3662FD; font-weight: 900; font-size: 24px; text-align: center; margin-top: 100px;">
+                    HOW TO USE
+                </p>
+                <p class="site_sec_title" style="color: black;">
+                    초심플하게 완성하는<br />
+                    <span style="color:#3662FD; font-weight: bold;">SEO 최적화 이용방법</span>
+                </p>
+                <div class="step_box">
+                    <div class="step_num">STEP 01.</div>
+                    <p>신청</p>
+                </div>
+                <div class="step_box">
+                    <div class="step_num">STEP 02.</div>
+                    <div class="step_text">
+                        <p>
+                            <span>상담</span> 및 <span>컨설팅</span>
+                        </p>
+                        <p class="add_msg">(컨셉, 기간, 작업범위, 가격 상담)</p>
+                    </div>
+                </div>
+                <div class="step_box">
+                    <div class="step_num">STEP 03.</div>
+                    <p>
+                        <span>결제</span> 및 홈페이지 작업 후<br />
+                        완성 된 <span>홈페이지 전달</span>
+                    </p>
+                </div>
+                <div class="step_box">
+                    <div class="step_num">STEP 04.</div>
+                    <p>이용 가이드 안내</p>
+                </div>
+                <div class="step_box">
+                    <div class="step_num">STEP 05.</div>
+                    <div class="step_text">
+                        <p>
+                            <span>백링크 작업</span> 진행
+                        </p>
+                        <p class="add_msg">(약 1개월 소요)</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
